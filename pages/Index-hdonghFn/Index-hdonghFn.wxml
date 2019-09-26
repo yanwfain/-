@@ -1,0 +1,12 @@
+<view class="bgc">
+ <view class="notr_hugu" wx:for="{{detail}}" bindtap='noterFnnei' data-id="{{item.id}}" data-user="{{item.user_id}}">
+      <view class="notr_leftimg">
+        <view class="time_pt">{{item.start_time}}-{{item.end_time}}</view>
+        <image src="{{item.img_url}}"></image>
+      </view>
+      <view class="notr_righttxt">
+          <view class="notr_titx">{{item.name}}</view>
+          <view class="notr_tits">{{item.activity_content}}</view>
+      </view>
+    </view>
+</view>

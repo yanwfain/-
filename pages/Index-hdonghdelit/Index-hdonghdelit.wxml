@@ -1,0 +1,135 @@
+<view class="dvbgc">
+  <view class="dvdelit">
+    <view class="dvdelit_teilt" wx:if="{{isOptxt}}">
+    {{detail.name}}
+    </view>
+    <input class="txt_dvdelit_nov" wx:if="{{timeDatp}}" value="{{name}}" bindinput="optname" placeholder="请输入修改标题"  style="border:1rpx solid gray;padding:10rpx;"  /> 
+    <view class="txt_dvdelit" >
+      {{detail.option_name}}
+    </view>
+    <!-- <input class="txt_dvdelit_nov" wx:if="{{timeDatp}}" placeholder="请输入修改发布人" style="border:1rpx solid gray;padding:10rpx;" />  -->
+    <view style="padding-bottom: 50rpx;border-bottom:1rpx solid #EBD9D2;"></view>
+    
+    <view class="new_huod">
+       <view class="new_img"><image class="img_img" src="../../images/zs.png"></image></view>
+       <view class="new_title">活动简介</view>
+    </view>
+    <view class="txt_noter">
+    <view class="toptxt_noter"><rich-text  nodes="{{detail.activity_content}}" ></rich-text></view>
+    <!-- <image class="img_txt_noter" src="{{item.img_url}}"></image> -->
+    </view>
+    <view class="zhenbao">
+      <view class="new_huod">
+       <view class="new_img"><image class="img_img" src="../../images/zs.png"></image></view>
+       <view class="new_title">活动时间</view>
+      </view>
+      
+     
+      <view class="txt_dvdelit_nov"  wx:if="{{isOptxt}}">{{detail.start_time}}-{{detail.end_time}}</view>
+       <input class="txt_dvdelit_nov" wx:if="{{timeDatp}}" value="{{start_time}}" bindinput="optsttime" placeholder="请输入开始时间" style="border:1rpx solid gray;padding:10rpx;" /> 
+       <input class="txt_dvdelit_nov" wx:if="{{timeDatp}}" value="{{end_time}}" bindinput="optend_time" placeholder="请输入结束时间" style="border:1rpx solid gray;padding:10rpx;" /> 
+    </view>
+    <view class="zhenbao">
+      <view class="new_huod">
+       <view class="new_img"><image class="img_img" src="../../images/zs.png"></image></view>
+       <view class="new_title">活动地址</view>
+      </view>
+      <view class="txt_dvdelit_nov" wx:if="{{isOptxt}}"><rich-text nodes="{{detail.address}}"></rich-text></view>
+      <input class="txt_dvdelit_nov" wx:if="{{timeDatp}}" value="{{address}}" bindinput="optsss" placeholder="请输入修改地址" style="border:1rpx solid gray;padding:10rpx;" /> 
+    </view>
+    <view class="zhenbao">
+      <view class="new_huod">
+       <view class="new_img"><image class="img_img" src="../../images/zs.png"></image></view>
+       <view class="new_title">活动须知</view>
+      </view>
+      <view class="txt_dvdelit_nov" wx:if="{{isOptxt}}"><rich-text nodes="{{detail.notice_activities}}"></rich-text></view>
+       <input class="txt_dvdelit_nov" wx:if="{{timeDatp}}" value="{{notice_activities}}" bindinput="notice_a" placeholder="请输入修改活动须知" style="border:1rpx solid gray;padding:10rpx;" /> 
+    </view>
+    <view class="zhenbao">
+      <view class="new_huod">
+       <view class="new_img"><image class="img_img" src="../../images/zs.png"></image></view>
+       <view class="new_title" >携带物品</view>
+      </view>
+      <view class="txt_dvdelit_nov" wx:if="{{isOptxt}}"><rich-text nodes="{{detail.carries}}"></rich-text></view>
+      <input class="txt_dvdelit_nov" wx:if="{{timeDatp}}" value="{{carries}}" bindinput="carriesss" placeholder="请输入修改携带物品" style="border:1rpx solid gray;padding:10rpx;" /> 
+    </view>
+    <view class="zhenbao">
+      <view class="new_huod">
+       <view class="new_img"><image class="img_img" src="../../images/zs.png"></image></view>
+       <view class="new_title">乘车路线</view>
+      </view>
+      <view class="txt_dvdelit_nov" wx:if="{{isOptxt}}"><rich-text nodes="{{detail.bus_line}}"></rich-text></view>
+           <input class="txt_dvdelit_nov" wx:if="{{timeDatp}}" value="{{bus_line}}" bindinput="bus_liness" placeholder="请输入修改乘车路线" style="border:1rpx solid gray;padding:10rpx;" /> 
+    </view>
+    <view class="zhenbao">
+      <view class="new_huod">
+       <view class="new_img"><image class="img_img" src="../../images/zs.png"></image></view>
+       <view class="new_title">联系人</view>
+      </view>
+      <view class="txt_dvdelit_nov" wx:if="{{isOptxt}}"><view>联系人:{{detail.contacts_name}}</view> <view>电话:{{detail.contacts_phone}}</view> </view>
+      <input class="txt_dvdelit_nov" wx:if="{{timeDatp}}" value="{{contacts_name}}" bindinput="contssss" placeholder="请输入修改联系人" style="border:1rpx solid gray;padding:10rpx;" /> 
+      <input class="txt_dvdelit_nov" wx:if="{{timeDatp}}" value="{{contacts_phone}}" bindinput="contphonee" placeholder="请输入修改联系人手机号" style="border:1rpx solid gray;padding:10rpx;" /> 
+    </view>
+    <view class="zhenbao">
+      <view class="new_huod">
+       <view class="new_img"><image class="img_img" src="../../images/zs.png"></image></view>
+       <view class="new_title" >费用说明</view>
+      </view>
+      <view class="txt_dvdelit_nov" wx:if="{{isOptxt}}"><rich-text nodes="{{detail.money_note}}"></rich-text></view>
+      <input class="txt_dvdelit_nov" wx:if="{{timeDatp}}" value="{{money_note}}" bindinput="money_not" placeholder="请输入修改费用说明" style="border:1rpx solid gray;padding:10rpx;" /> 
+      <!-- <view class="txt_dvdelit_nov">2. 食宿免费，自愿随喜好</view>
+      <view class="txt_dvdelit_nov">3. 食宿免费，自愿随喜好</view> -->
+    </view>
+    <view class="zhenbao">
+      <view class="new_huod">
+       <view class="new_img"><image class="img_img" src="../../images/zs.png"></image></view>
+       <view class="new_title">截止时间</view>
+      </view>
+      <view class="txt_dvdelit_nov" wx:if="{{isOptxt}}">本活动截止  {{detail.sign_up_end_time}}</view>
+      <input class="txt_dvdelit_nov" wx:if="{{timeDatp}}" value="{{sign_up_end_time}}" bindinput="signtime" placeholder="请输入修改截止时间" style="border:1rpx solid gray;padding:10rpx;" /> 
+    </view>
+
+
+
+
+      <view class="new_huod" wx:if="{{ioops==1}}">
+       <view class="new_img"><image class="img_img" src="../../images/zs.png"></image></view>
+       <view class="new_title">活动视频推荐</view>
+      </view>
+
+      <view class="going_vio">
+        <view class="vie_nav" wx:for="{{videos}}">
+          <video class="vieo_go" src="{{item.url}}"></video>
+        
+        </view>
+        
+    <!-- <image src="../../images/avatar.png"></image> -->
+      
+      </view>
+      <view class="new_huod">
+       <view class="new_img"><image class="img_img" src="../../images/zs.png"></image></view>
+       <view class="new_title">学员分享推荐</view>
+      </view>
+      <view class="notr_hugu" wx:for="{{noter}}" bindtap='noterFn' data-id="{{item.id}}">
+        <view class="notr_leftimg">
+          <image src="{{item.img_url}}"></image>
+        </view>
+        <view class="notr_righttxt">
+            <view class="notr_titx">{{item.name}}</view>
+            <view class="notr_tits">{{item.content}}</view>
+        </view>
+      </view>
+  </view>
+   <view class="butn" wx:if="{{timeDatp}}">
+    <!-- <view class="guan">关注</view> -->
+    <view class="guan"  bindtap="gobuFnlook" data-id="{{detail.id}}">查看报名</view>
+
+    <view class="goname"  bindtap="gobuFn">重新发布</view>
+  </view>
+  <view class="butn" wx:else>
+    <view class="guan" bindtap='saveShop'>{{off == 1 ? "关注" : "取消关注"}}</view>
+    <view class="goname" bindtap="gosignup" wx:if="{{offs== 1}}" data-id="{{detail.id}}" data-activities_money="{{detail.activities_money}}">立即报名</view>
+    <view class="goname" wx:else >已报名</view>
+  </view>
+</view>
+<view class="bot-bot"></view>

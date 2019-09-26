@@ -1,0 +1,66 @@
+/* pages/Index-editFn/Index-editFn.wxss */
+page{
+  background: rgb(245, 237, 234);
+}
+.bgc_ed{
+  background: rgb(245, 237, 234);
+  width: 100%;  
+}
+.ed_meimg{
+  width: 80%;
+  margin:0 auto;
+  line-height: 80rpx;
+  padding: 40rpx;
+  display: flex;
+  position: relative;
+  border-bottom: 1rpx solid #EBD9D2;
+
+}
+.me_img{
+  
+  position:absolute;
+ 
+}
+.me_img image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.img_me{
+width: 100rpx;
+  height: 100rpx;
+   top:40rpx;
+  right: 60rpx;
+}
+.name_ne{
+  width: 200rpx;
+  height: 50rpx;
+  top:60rpx;
+  right:60rpx;
+  line-height: 50rpx;
+  text-align: right;
+}
+.name_num{
+   width: 200rpx;
+  height: 50rpx;
+  top:60rpx;
+  right:20rpx;
+  line-height: 50rpx;
+}
+.name_tel{
+   width: 200rpx;
+  height: 50rpx;
+  top:60rpx;
+  right:30rpx;
+  line-height: 50rpx;
+}
+.queddd{
+  width: 180rpx;
+  height: 60rpx;
+  background: rgb(66, 21, 0);
+  color: white;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius: 50rpx;
+  margin:0 auto;
+  margin-top:20rpx;
+}

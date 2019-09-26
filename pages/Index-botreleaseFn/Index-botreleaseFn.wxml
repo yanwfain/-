@@ -1,0 +1,28 @@
+<view class="bg_p">
+  <view class="text_title">
+    <input value="{{name}}" placeholder="请输入您分享内容的标题"  bindinput="nameopFn" />
+  </view>
+  <view class="text_title_teatx">
+    <textarea maxlength="9999"  placeholder="请输入您分享内容的标题" value="{{content}}" bindinput="contentFnop" /> 
+    <!-- <textarea maxlength=""></textarea> -->
+  </view>
+  
+
+    <view class="main-item">
+      <view class="main-item-title">上传照片</view>
+        <view class="cover-box" bindtap='uploadimg'>
+          <image src="../../images/tupian.png"></image>
+        </view>
+      <view class="main-item-cover">
+         <view  class="picture_item" >
+          <view class="cover-box">
+            <image  src="{{upload_picture_list}}"></image>
+          </view>
+        </view>
+      
+      </view>
+    </view>
+  <view class="sub_ti" bindtap="submitops">
+    提交
+  </view>
+</view>

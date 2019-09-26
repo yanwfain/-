@@ -1,0 +1,178 @@
+<!-- <view class="searchBox">
+  <swiper class='shop_swiper' indicator-dots autoplay="true" interval="3000" duration="1000" circular='true' hidden='{{luboActive}}' class='lbImg'>
+    <block wx:for="{{detail}}" wx:key="">
+      <swiper-item class="imgheight">
+        <image src="{{item.imgUrl}}" class='lbImg' data-platformCode='{{item.platformCode}}' data-status='{{item.status}}' data-id='{{item.id}}' bindtap='goChannel' />
+      </swiper-item>
+    </block>
+  </swiper> 
+</view> -->
+<view class="center_time">
+  <view class="center_timep">
+    <view class="center_timetop">
+      <view class="num_time_ri">
+        <view class="ri_qi">{{r}}</view>
+        <view class="judy_time">{{n}}.{{y}}</view>
+      </view>
+      <view class="num_cinum_time">
+        <view class="num_cinum">
+          <view class="dian_bgg"></view>
+          <view class="num_cimun_txt">禅修次数：3次</view>
+        </view>
+        <view class="num_cinum">
+          <view class="dian_bgg"></view>
+          <view class="num_cimun_txt">总时长：28分钟</view>
+        </view>
+      </view>
+    </view>
+    <view class="bot_center">
+
+      <view class="sum_num">
+        {{ro}}
+      </view>
+      <view class="sum_num">
+        {{rt}}
+      </view>
+      <view class="sum_num">
+        {{rh}}
+      </view>
+      <view class="sum_num">
+        {{r}}
+      </view>
+      <view class="sum_num">
+        {{rf}}
+      </view>
+      <view class="sum_num">
+        {{rfv}}
+      </view>
+      <view class="sum_num">
+        {{rs}}
+      </view>
+      <view class="center_botcenterimg">
+        <image src="../../images/dr.png"></image>
+      </view>
+
+    </view>
+    <view class="this_jt">
+      今天
+    </view>
+  </view>
+</view>
+<view class="str_xui" bindtap="beginmeditation">
+  <form bindsubmit="form_submit" report-submit='true'>
+    <button form-type="submit" class='formid'> </button>
+  </form>
+  打坐设置
+</view>
+<!-- <view class="set_time" bindtap="setclock">
+<form bindsubmit="form_submit" report-submit='true'>
+    <button form-type="submit" class='formid'> </button>
+  </form>
+  “断字诀”设置
+</view> -->
+<view class="flx_bg" wx:if="{{isfixde}}"></view>
+<view class="setclock_cont" wx:if="{{isfixde}}">
+  <view class="top_setlock">
+    <view class="top_setlock_img">
+      <image src="../../images/tk.png"></image>
+    </view>
+    <!-- 设置时间 -->
+    <view class="stat_times_fix">设置时间</view>
+  </view>
+  <view class="cont_fixe_cont">
+    <view class="time_cont_x">
+      <view class="inp_gosignup zf">
+        <radio-group bindchange="ycf">
+          <!-- <radio value="5分钟" style="margin-right:100rpx">5分钟</radio>
+          <radio value="10分钟" >10分钟</radio>
+          <radio value="20分钟" style="margin-right:84rpx">20分钟</radio> -->
+          <radio value="30"  style="margin-right:84rpx">半点</radio>
+          <radio value="00" >整点</radio>
+          <!-- <radio value="{{ban}}">半点</radio>
+          <radio value="{{zhen}}" style="margin-left:117rpx">整点</radio> -->
+          <!-- <radio value="2小时">2小时</radio> -->
+        </radio-group>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="custom" wx:if="{{ziDFn}}">
+    <view class="cuot_custo"> 自定义时长：</view>
+    <view class="cuost_time_inp">
+      <input value="{{nums}}" placeholder="请输入时长" bindinput="inputnum" />
+    </view>
+    <view class="mustion_coust">分钟</view>
+  </view> -->
+  <view class="right_bgctime">
+    <view class="right_title">
+      开始时间
+    </view>
+    <view class="main-item-input">
+      <picker bindchange="pickerProChangeh" mode="time" value="{{time}}">
+        <view class="picker-area-text">
+          {{time}}
+        </view>
+      </picker>
+      <image src="../../images/look.png"></image>
+    </view>
+  </view>
+  <view class="right_bgctime" style="margin-bottom:20rpx">
+    <view class="right_title">
+      结束时间
+    </view>
+    <view class="main-item-input">
+      <picker bindchange="pickerProChangehs" mode="time" value="{{timesbox}}">
+        <view class="picker-area-text">
+          {{timesbox}}
+        </view>
+      </picker>
+      <image src="../../images/look.png"></image>
+    </view>
+  </view>
+  <!-- <view class="custom">
+    <view class="cuot_custo"> 咒语：</view>  
+    <view class="cuost_time_inp"><input value="" placeholder="请输入咒语" /></view>
+  </view> -->
+  <view class="o_fix_bot">
+    <view class="quxiao_o_bot" bindtap="noxiaoFn">取消</view>
+    <view class="que_o_bot" bindtap="yequeFn" wx:if="{{isQuesho}}"><form bindsubmit="form_submit" report-submit='true'>
+    <button form-type="submit" class='formid'> </button>
+  </form>确定</view>
+  </view>
+  <view class="lokRwn" bindtap="lookRwu">查看任务</view>
+</view>
+
+<view class="renwu" wx:if="{{cnetrWu}}">
+  <view class="renwu_title">任务提醒</view>
+  <view wx:if="{{ztime>0}}">
+    <view class="stattimes" style="margin-top2:20rpx;">
+      开始时间{{time}}
+    </view>
+    <view class="stoptimes">
+      结束时间{{timesbox}}
+    </view>
+    <view class="stoptimes">
+      间隔提醒{{nums}}(分钟或半点整点)/每次
+    </view>
+    <view class="ren-que">
+      <view class="ren_d" bindtap="renWuFn">
+        确定
+      </view>
+      <view class="ren_q" bindtap="quXiao">
+        取消任务
+      </view>
+    </view>
+
+  </view>
+  <view wx:else>
+    <view class="zanWu">
+      暂无任务
+    </view>
+    <view class="ren-que">
+      <view class="ren_d" bindtap="renWuFn">
+        确定
+      </view>
+    </view>
+  </view>
+
+
+</view>

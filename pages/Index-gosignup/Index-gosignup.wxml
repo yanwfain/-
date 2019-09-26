@@ -1,0 +1,116 @@
+<!--pages/Index-gosignup/Index-gosignup.wxml-->
+<!-- <text>pages/Index-gosignup/Index-gosignup.wxml</text> -->
+<view class="bgc_gosignup">
+  <view class="gosignup_navp">
+    <view class="gosignup_row">
+      <view class="gosignup_leftname">姓名</view>
+      <view class="inp_gosignup" style="margin-left:200rpx;">
+        <input value="" placeholder="请输入您的姓名" value="{{user_name}}" bindinput="userFn" />
+      </view>
+    </view>
+    <view class="gosignup_row pos">
+      <view class="gosignup_leftname">性别</view>
+      <view class="inp_gosignup" style="margin-left:350rpx;width:200rpx;">
+       <view class="main-item-input">
+            <picker bindchange="pickerProChange" value="{{ pickerProData.index }}" range="{{ pickerProData.items }}">
+            <view class="picker-area-text">
+               {{pickerProData.items[pickerProData.index]}} 
+            </view>
+          </picker>
+        </view>
+      </view>
+        <image  class="picker-area-arrow" src="../../images/look.png" mode="aspectFill"></image>
+    </view>
+    <view class="gosignup_row pos">
+      <view class="gosignup_leftname">出生日期</view>
+      <view class="inp_gosignup" style="margin-left:220rpx;width:250rpx;">
+       <view class="main-item-input">
+            <picker bindchange="pickerProChangedata"  mode="date" end="n-y-r" value="{{years}}">
+            <view class="picker-area-text">
+               {{years}} 
+            </view>
+          </picker>
+        </view>
+      </view>
+        <image  class="picker-area-arrow" src="../../images/look.png" mode="aspectFill"></image>
+    </view>
+    <view class="gosignup_row">
+      <view class="gosignup_leftname">年龄</view>
+      <view class="inp_gosignup" style="margin-left:200rpx;">
+        <input class="inputnum" value="" placeholder="请输入您的年龄" type="text" style="text-aling:right" value="{{ouser_num}}" />
+      </view>
+    </view>
+    <view class="gosignup_row">
+      <view class="gosignup_leftname">身份证号</view>
+      <view class="inp_gosignup" style="margin-left:90rpx;">
+        <input class="inputnum" value="{{id_number}}" placeholder="请输入您的身份证号" bindinput="id_numberFn" type="text" style="text-aling:right" />
+      </view>
+    </view>
+    <view class="gosignup_row">
+      <view class="gosignup_leftname">手机号</view>
+      <view class="inp_gosignup" style="line-height:30rpx;;">
+        <input class="inputnum" value='{{moiles.mobile}}' name="mobile" bindinput="mobileInputEvent" placeholder="请输入您的手机号" type="text" style="text-aling:right" />
+        <button class="butn" bindtap="verifyCodeEvent"  type="default" disabled="{{buttonDisable}}">{{buttonDisable === true?verifyCodeTime:'获取验证码'}}</button>
+      </view>
+    </view>
+    <view class="gosignup_row">
+      <view class="gosignup_leftname">验证码</view>
+      <view class="inp_gosignup" style="margin-left:90rpx;">
+        <input class="inputnum" value="{{msg_code}}" placeholder="请输入验证码" bindinput="msg_codeFn" type="text" style="text-aling:right" />
+      </view>
+    </view>
+    <view class="gosignup_row">
+      <view class="gosignup_leftname">活动价格</view>
+      <view class="inp_gosignup" style="margin-left:90rpx;">
+        <input class="inputnum sunbum" value="￥{{activities_money}}"  type="text" style="text-aling:right" disabled="disabled"/>
+      </view>
+    </view>
+    <view class="gosignup_row">
+      <view class="gosignup_leftname">支付方式</view>
+      <view class="inp_gosignup zf" style="margin-left:40rpx;">
+        <radio-group bindchange="ycf"  style="display:flex;font-size:24rpx;">
+          <radio value="在线支付"  style="margin-right:30rpx;">在线支付</radio>
+          <radio value="现场支付" >现场支付</radio>
+        </radio-group>
+      </view>
+    </view>
+    <view class="sinup_gosinup" bindtap="isShow">
+        {{bot_Name}}
+    </view>
+  </view>
+  <view class="isFlone" wx:if="{{isGuan}}">
+  </view>
+  <view class="isbottom" wx:if="{{isGuan}}">
+    <!-- 7-叉.png -->
+    <view class="top_guanbi">
+      <view class="guanbi" bindtap="isGuan" >
+        <image src="../../images/cha.png"></image>
+      </view>
+      <view class="top_title_gb">
+        选择支付方式
+      </view>
+    </view>
+    <view class="big_munst_center">
+      ￥299.00
+    </view>
+    <view class="fangshi">
+      <radio-group bindchange="ycfp">
+      <view class="zhifu_box">  
+        <view class="zhifu_img"><image src="../../images/weix.png"></image></view>
+        <view style="margin-right:20rpx;">微信支付</view>
+        <radio style="margin-left:300rpx" value="微信支付" ></radio>
+      </view>
+<!--           
+      <view class="zhifu_box">  
+        <view class="zhifu_img"><image src="../../images/zhi.png"></image></view>
+        <view style="margin-right:40rpx;">支付宝支付</view>
+        <radio  style="margin-left:350rpx" value="支付宝支付" ></radio>
+      </view> -->
+        </radio-group>
+    
+    </view>
+    <view class="payment" bindtap="paymentFn">
+      立即付款
+    </view> 
+  </view>
+</view>

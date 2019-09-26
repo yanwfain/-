@@ -1,0 +1,14 @@
+<!--pages/Index-xiaoFn/Index-xiaoFn.wxml-->
+<view wx:for="{{detilds}}">
+  <view class="cont_xiaoFn">
+    {{item.content}}
+    <view>
+    {{item.create_time}}
+  </view> 
+  </view>
+  
+</view>
+
+<view claaa="sele_picke">
+  
+</view>

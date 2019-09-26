@@ -1,0 +1,16 @@
+/* pages/Index-xiaoFn/Index-xiaoFn.wxss */
+page{
+  background: rgb(245, 237, 234);
+}
+.cont_xiaoFn{
+  padding: 20rpx;
+  width: 90%;
+  margin: 0 auto;
+  /* line-height: 80rpx; */
+  color:gray;
+  font-size: 30rpx;
+  background: rgb(239, 225, 222);
+  border-radius: 10rpx;
+  margin-top:20rpx;
+  margin-bottom: 20rpx;
+}

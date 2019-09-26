@@ -1,0 +1,32 @@
+/* pages/Index-commonproblem/Index-commonproblem.wxss */  
+page{
+  background: rgb(245, 237, 234)
+}
+.comm_dv{
+  padding: 30rpx;
+  background: rgb(239, 225, 222);
+  width: 86%;
+  margin:0 auto;
+  display: flex;
+  border-radius: 10rpx;
+  position:relative;
+  margin-top:30rpx;
+
+
+}
+.txt_comm{
+  color: rgb(51, 51, 52);
+  font-size: 30rpx;
+}
+.look_comming{
+  position:absolute;
+  top:32rpx;
+  right:50rpx;
+  width: 18rpx;
+  height: 28rpx;
+
+}
+.look_comming image{
+  width: 18rpx;
+  height: 28rpx;
+}

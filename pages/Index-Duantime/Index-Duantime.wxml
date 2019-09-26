@@ -1,0 +1,62 @@
+<view class="posti_fix_bg">
+<!-- <view class="Duan_time_top_fix"></view>
+<view class="Duan_time_bot_fix"></view> -->
+  <view class="Duan_time">
+    <view class="nav_times">
+       <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange">
+          <picker-view-column>
+            <view wx:for="{{indexidxshi}}" style="line-height: 50px">{{item.idxs}}</view>
+          </picker-view-column>
+        </picker-view>
+    </view>
+    <view class="nav_timess">
+      <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChanges">
+        <picker-view-column>
+              <view wx:for="{{indexidxfen}}" style="line-height: 50px">{{item.idxsf}}</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+  </view>
+</view>
+<view class="right_bgctime" style="margin-bottom:40rpx">
+      <view class="right_title"> 
+      开始时间
+      </view>
+      <view class="main-item-input" >
+            <picker bindchange="pickerProChangeh"  mode="time" value="{{time}}" >
+              <view class="picker-area-text">
+                {{time}} 
+              </view>
+            </picker>
+            <image src="../../images/look.png"></image>
+      </view>
+</view>
+<view class="right_bgctime" style="margin-bottom:40rpx">
+      <view class="right_title"> 
+       结束时间
+      </view>
+      <view class="main-item-input" >
+            <picker bindchange="pickerProChange" mode="time" value="{{ timel}}" >
+              <view class="picker-area-text">
+                {{timel}} 
+              </view>
+            </picker>
+            <image src="../../images/look.png"></image>
+      </view>
+</view>
+<view class="right_bgctime" style="margin-bottom:40rpx">
+      <view class="right_title"> 
+      重复间隔
+      </view>
+      <view class="main-item-input" >
+            <picker bindchange="pickerProChangehs"  mode="time" value="{{ timell }}" >
+              <view class="picker-area-text">
+                {{timell}} 
+              </view>
+            </picker>
+            <image src="../../images/look.png"></image>
+      </view>
+</view> 
+<view class="que_duan">
+  确定
+</view>

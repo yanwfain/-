@@ -1,0 +1,60 @@
+/* pages/Index-botreleaseFn/Index-botreleaseFn.wxss */
+page{
+  background: rgb(245, 237, 234);
+}
+.text_title{
+  
+  width: 90%;
+  margin:0 auto;
+  margin-top:20rpx;
+  padding: 20rpx;
+  background: rgb(239, 225, 222);
+  border-radius: 10rpx;
+}
+.text_title_teatx{
+  width: 90%;
+  padding: 20rpx;
+  height: 500rpx;
+  margin: 0 auto;
+  margin-top:20rpx;
+  background: rgb(239, 225, 222);
+  border-radius: 10rpx;
+}
+.text_title_teatx textarea{
+  width: 100%;
+  height: 500rpx;
+}
+.sub_ti{
+  width: 400rpx;
+  height: 90rpx;
+  background: rgb(66, 21, 0);
+  border-radius: 60rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 34rpx;
+  color: white;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  margin-bottom: 50rpx;
+
+}
+.main-item{
+  width: 90%;
+  margin:0 auto;
+  margin-top:20rpx;
+
+}
+.main-item-title{
+
+}
+.cover-box{
+  width: 500rpx;
+  height:300rpx;
+   margin: 0 auto;
+   text-align: center;
+}
+.cover-box image{
+  width: 350rpx;
+  height: 250rpx;
+  margin: 0 auto;
+}

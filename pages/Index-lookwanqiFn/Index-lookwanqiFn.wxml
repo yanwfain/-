@@ -1,0 +1,14 @@
+<view class="bcg">
+  <view class="bgc_nav">
+    <view class="notr_hugu" wx:for="{{detailcont}}" bindtap='noterFn' data-id="{{item.id}}">
+        <view class="notr_leftimg">
+          <image src="{{item.img_url}}"></image>
+        </view>
+        <view class="notr_righttxt">
+            <view class="notr_titx">{{item.name}}</view>
+            <view class="notr_tits">{{item.content}}</view>
+        </view>
+    </view>
+  </view>
+    
+</view>

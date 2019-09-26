@@ -1,0 +1,26 @@
+<view class="bgc_ed">
+  <view class="ed_meimg">
+    <view class="me_title">头像</view>
+    <view class="me_img img_me"><image src="{{avatarUrl}}"></image></view>
+  </view>
+  <view class="ed_meimg">
+    <view class="me_title">昵称</view>
+    <view class="me_img name_ne"><input value="{{nickName}}" placeholder="请输入昵称" bindinput="nickNameFn" /></view>
+  </view>
+  <view class="ed_meimg">
+    <view class="me_title">姓名</view>
+    <view class="me_img name_ne"><input placeholder="请输入姓名" value="{{real_name}}" bindinput="realFn" /></view>
+  </view>
+   <view class="ed_meimg">
+    <view class="me_title">出生年月</view>
+    <view class="me_img name_num"><input placeholder="请输入出生年月日" value="{{user_birth}}" bindinput="birthFn" /></view>
+  </view>
+     <view class="ed_meimg">
+    <view class="me_title">手机号</view>
+    <view class="me_img name_tel"><input placeholder="请输入手机号" value="{{phone}}" bindinput="phoneFn" /></view>
+  </view>
+
+  <view class="queddd" bindtap="subiops">
+    确定
+  </view>
+</view>

@@ -1,0 +1,122 @@
+/* pages/Index-Duantime/Index-Duantime.wxss */
+page{
+  background: rgb(245, 237, 234);
+}
+.posti_fix_bg{
+  position: relative;
+}
+.Duan_time_top_fix{
+  position: absolute;
+  width: 100%;
+  height:180rpx;
+   background: gray;
+   opacity: .7;
+   top:0;
+   left: 0;
+   border-bottom: 1rpx solid rgb(236, 217, 211);
+}
+.Duan_time_bot_fix{
+  position: absolute;
+   width: 100%;
+  height:180rpx;
+   background: gray;
+   opacity: .7;
+   bottom:0;
+   left: 0;
+   border-top: 1rpx solid rgb(236, 217, 211);
+}
+.Duan_time{
+  width: 100%;
+  height: 530rpx;
+  /* padding: 40rpx; */
+  overflow: hidden;
+  margin:0 auto;
+  /* border-bottom: 1rpx solid red; */
+  display: flex;
+  justify-content: center;
+  font-size: 34rpx;
+  color:rgb(61, 22, 0);
+  font-weight: 700;
+  /* position: relative; */
+}
+
+.nav_times{
+  width: 50%;
+  /* display: flex; */
+  /* margin-right: 40rpx; */
+  overflow: hidden;
+  height: 530rpx;
+  text-align: center;
+  
+}
+.nav_timess{
+   width: 50%;
+    /* margin-left: 40rpx; */
+     overflow: hidden;
+     height: 530rpx;
+   text-align: center;
+}
+.vie_time_shi{
+  margin-top:20rpx;
+  margin-bottom: 20rpx;
+}
+.Duan_time{
+   display: flex;
+}
+.right_bgctime{
+  padding-left:40rpx;
+  padding-right:40rpx;
+  /* padding-top:40rpx; */
+  /* margin-top:20rpx; */
+  display:flex;
+   width: 100%;
+  height: 100rpx;
+   background: rgb(239, 225, 222);
+
+}
+.right_title{
+  font-size: 30rpx;
+  line-height: 100rpx;
+  /* font-weight: 700; */
+  
+}
+.main-item-input{
+  width: 200rpx;
+  height: 50rpx;
+  padding: 10rpx;
+  line-height: 50rpx;
+  margin: 0 auto;
+  text-align: left;
+  background: rgb(239, 225, 222);
+  /* border-radius: 30rpx; */
+  display: flex;
+  margin-top:20rpx;
+  margin-bottom: 20rpx;
+  position:relative;
+  margin-left: 400rpx;
+}
+.picker-area-text{
+  margin-left:20rpx;
+}
+.main-item-input image{
+  width: 18rpx;
+  height: 26rpx;
+  position:absolute;
+  top:23rpx;
+  right:70rpx;
+
+}
+.picker-area-text{
+  width: 400rpx;
+  color: gray;
+}
+.que_duan{
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background: rgb(66, 21, 0);
+  color:white;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 80rpx;
+}

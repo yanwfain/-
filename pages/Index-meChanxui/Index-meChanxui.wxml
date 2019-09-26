@@ -1,0 +1,38 @@
+<view class="bgc_p">
+  <!-- <view class="pick_mechan">
+    <view class="right_bgctime">
+      <view class="main-item-input">
+        <picker bindchange="pickerProChange" value="{{ pickerProData.index }}" range="{{ pickerProData.items }}">
+          <view class="picker-area-text">
+            {{pickerProData.items[pickerProData.index]}}
+          </view>
+        </picker>
+        <image src="../../images/xl.png"></image>
+      </view>
+    </view>
+    <view class="right_bgctime" style="margin-left:30rpx;">
+      <view class="main-item-input">
+        <picker bindchange="pickerProChanges" value="{{ pickerProDatas.index }}" range="{{ pickerProDatas.items }}">
+          <view class="picker-area-text">
+            {{pickerProDatas.items[pickerProDatas.index]}}
+          </view>
+        </picker>
+        <image src="../../images/xl.png"></image>
+      </view>
+    </view>
+
+  </view> -->
+  <view class="mechan_cont" wx:for="{{detilds}}">
+    <view class="top_cont">
+      <view class="top_contime">历史总记录排名</view>
+      <view class="top_contimenum">{{item.name}}排名</view>
+    </view>
+    <view class="left_num_time">
+      <view>{{item.name}}禅修次数：{{item.all_num}}次</view>
+      <view>{{item.name}}总时长：{{item.main_num}}分钟</view>
+    </view>
+    <view class="ranking">
+      {{item.rank}}
+    </view>
+  </view>
+</view>

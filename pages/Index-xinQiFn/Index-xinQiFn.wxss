@@ -1,0 +1,179 @@
+/* pages/Index-xinMiFn/Index-xinMiFn.wxss */
+page{
+  background: rgb(245, 237, 234);
+}
+.top_left_top{
+  width: 90%;
+  margin: 0 auto;
+  margin-top:20rpx;
+  
+}
+.new_huod{
+   display:flex;
+   margin-top:30rpx;
+   margin-left:30rpx;
+}
+.new_img{
+  width: 50rpx;
+  height: 50rpx;
+  flex-direction:column;
+  align-items:center;
+   /* display:flex; */
+  justify-content:center;
+  line-height: 50rpx;
+}
+.img_img{
+  width: 40rpx;
+  height:40rpx;
+  margin-top:5rpx;
+}
+.new_title{
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width: 300rpx;
+  font-weight: 700;
+  color:rgb(67, 22, 1);
+}
+.right_bgctime{
+  padding-left:20rpx;
+  padding-right:40rpx;
+  padding-top:20rpx;
+  display: flex;
+
+}
+.right_title{
+  font-size: 30rpx;
+  font-weight: 700;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-top:30rpx;
+}
+.right_titleo{
+  font-size: 30rpx;
+  /* font-weight: 700; */
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-top:30rpx;
+  margin-left:30rpx;
+}
+.tiaan{
+  width: 50rpx;
+  height: 50rpx;
+  font-size: 30rpx;
+  /* font-weight: 700; */
+  line-height: 50rpx;
+  margin-top:30rpx;
+  margin-left:30rpx;
+}
+.mi_dviw{
+  display: flex;
+  width: 300rpx;
+  line-height: 50rpx;
+}
+.main-item-input{
+  width: 150rpx;
+  height: 50rpx;
+  padding: 10rpx;
+  line-height: 50rpx;
+  margin: 0 auto;
+  text-align: left;
+  background: rgb(239, 225, 222);
+  border-radius: 30rpx;
+  display: flex;
+  margin-top:20rpx;
+  margin-bottom: 20rpx;
+  position:relative;
+}
+.main-item-inputo{
+  width: 150rpx;
+  height: 50rpx;
+  padding: 10rpx;
+  line-height: 50rpx;
+  /* margin: 0 auto; */
+  text-align: left;
+  background: rgb(239, 225, 222);
+  border-radius: 30rpx;
+  display: flex;
+  margin-top:20rpx;
+  margin-bottom: 20rpx;
+  position:relative;
+}
+.picker-area-text{
+  margin-left:20rpx;
+  color:gray;
+}
+.main-item-input image{
+  width: 18rpx;
+  height: 26rpx;
+  position:absolute;
+  top:24rpx;
+  right:30rpx;
+
+}
+.main-item-inputo image{
+  width: 18rpx;
+  height: 26rpx;
+  position:absolute;
+  top:24rpx;
+  right:30rpx;
+
+}
+.picker-area-text{
+  width: 160rpx;
+
+}
+.me_que{
+  /* position: relative; */
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+.me_que view{
+  /* position: absolute; */
+  width: 200rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  margin-left:10rpx;
+  padding: 10rpx;
+  color: white;
+  background: rgb(66, 21, 0);
+  border-radius: 40rpx;
+}
+.fenge{
+  width: 100%;
+  height: 30rpx;
+  background: rgb(239, 225, 222);
+  margin-top:50rpx;
+}
+.mi_dviwee{
+  display: flex;
+  width: 90%;
+  margin:0 auto;
+  line-height: 50rpx;
+}
+.me_que_top{
+  margin-top:70rpx;
+  position: relative;
+  width: 100%;
+  height: 60rpx;
+
+}
+.me_que_top view{
+  position: absolute;
+  width: 200rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  top:0;
+  right:50rpx;
+  padding: 10rpx;
+  color: white;
+  background: rgb(66, 21, 0);
+  border-radius: 40rpx;
+}

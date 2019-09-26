@@ -1,0 +1,54 @@
+/* pages/Index-twoAll/Index-twoAll.wxss */
+
+.view_txt {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20rpx;
+  margin-top: 30%;
+}
+
+.txt {
+  text-align: center;
+}
+
+.but {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  height: 60rpx;
+}
+.but view{
+  line-height: 60rpx;
+  width: 35%;
+  margin-left:2%;
+  margin-right:2%;
+  text-align: center;
+  background: rgb(66, 21, 0);
+  border-radius: 20rpx;
+  color: white;
+  font-size: 24rpx;
+}
+page {
+background: rgb(245, 237, 234);
+
+}
+.sop_tchan{
+  position: fixed;
+  bottom: 20%;
+  right:5%;
+  width: 250rpx; 
+  flex: 1;
+  float: right;
+  margin-right: 5%;
+  height: 50rpx;
+  line-height: 50rpx;
+  background: rgb(66, 21, 0);
+  text-align: center;
+  color: white;
+  border-radius: 40rpx;
+  padding: 10rpx;
+  /* margin-left: 10rpx; */
+}

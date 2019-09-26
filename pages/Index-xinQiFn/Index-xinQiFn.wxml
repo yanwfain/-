@@ -1,0 +1,40 @@
+<view class="new_huod">
+       <view class="new_img"><image class="img_img" src="../../images/1-标题装饰.png"></image></view>
+       <view class="new_title">千座</view>
+</view>
+<view class="qian_zuo">
+  <view class="mi_dviwee">
+       <view class="main-item-inputo" >
+            <!-- <picker bindchange="pickerProChangedst" value="{{ pickerProDatadst.index }}" range="{{ pickerProDatadst.items }}">
+              <view class="picker-area-text">
+                {{pickerProDatadst.items[pickerProDatadst.index]}} 
+              </view>
+            </picker>
+            <image src="../../images/look.png"></image> -->
+            <input value="{{optian}}" type="number" bindinput="optianFn" placeholder="请输入" />
+      </view>
+      <view class="tiaan">天</view>
+      <view class="right_titleo">（坚持千座的第几天)</view>
+     
+  </view>
+  <view class="mi_dviwee">
+       <view class="main-item-inputo" >
+            <!-- <picker bindchange="pickerProChangedsq" value="{{ pickerProDatadsq.index }}" range="{{ pickerProDatadsq.items }}">
+              <view class="picker-area-text">
+                {{pickerProDatadsq.items[pickerProDatadsq.index]}} 
+              </view>
+            </picker>
+            <image src="../../images/look.png"></image> -->
+            <input value="{{optians}}" type="number" bindinput="optiansFn" placeholder="请输入" />
+      </view>
+      <view class="tiaan">天</view>
+      <view class="right_titleo"> 
+      （坚持千座的第几座，如果记不清加座的次数，可与天数相同)
+      </view>
+     
+  </view>
+
+</view>
+  <view class="me_que_top">
+      <view bindtap="baiFn">开始</view>
+  </view>

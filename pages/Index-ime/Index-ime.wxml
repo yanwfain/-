@@ -1,0 +1,192 @@
+<view class="bgc_me">
+<view class='buttons' wx:if="{{!hasUserInfo}}" catchtouchmove='preventD'>
+  <view class='butt'>
+    <button  class='getUser' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 微信授权登陆 </button>
+  </view>
+</view>
+  <view class="me_topname"  wx:if="{{isUser}}">
+    <view class="imgpos">
+      <image src="../../images/csbj.png"></image>
+    </view>
+    <view class="me_centername">
+      <view class="imgposn">
+        <image src="../../images/bjt.png"></image>
+      </view>
+    </view>
+    <view class="name_meimg">
+      <view class="user_name">
+        <image src="{{avatarUrl}}"></image>
+      </view>
+      <view class="user_title">{{nickName}}</view>
+    </view>
+    <view class="name_meimg_left" bindtap="editFn">
+      <form bindsubmit="form_submit" report-submit='true'>
+        <button form-type="submit" class='formid'> </button>
+      </form>
+      <view class="user_name_left">
+        <image src="../../images/bj2.png"></image>
+      </view>
+      <view class="user_title_left">编辑</view>
+    </view>
+    <view class="name_meimg_right" bindtap="xiaoFn">
+      <form bindsubmit="form_submit" report-submit='true'>
+        <button form-type="submit" class='formid'> </button>
+      </form>
+      <view class="user_name_right">
+        <image src="../../images/xx.png"></image>
+      </view>
+      <view class="user_title_right">消息</view>
+    </view>
+  </view>
+  <view class="list_bot">
+    <view class="list_me" bindtap="releaseYfn">
+      <view class="list_me_imageleft">
+        <image src="../../images/wfbdy.png"></image>
+      </view>
+      <view class="list_me_y">我参与的营</view>
+      <view class="list_me_imageright">
+        <image src="../../images/look.png"></image>
+      </view>
+    </view>
+    <!-- <view class="list_me" bindtap="meChanxui">
+      <view class="list_me_imageleft"><image src="../../images/cx.png"></image></view>
+      <view class="list_me_y">我的禅修</view>
+      <view class="list_me_imageright"><image src="../../images/look.png"></image></view>
+    </view> -->
+    <view class="list_me" bindtap="administration" wx:if="{{isGuanliops}}">
+      <view class="list_me_imageleft">
+        <image src="../../images/wdgl.png"></image>
+      </view>
+      <view class="list_me_y">我的管理</view>
+      <view class="list_me_imageright">
+        <image src="../../images/look.png"></image>
+      </view>
+    </view>
+    <view class="list_me" bindtap="resturefromFn" wx:if="{{isrestiorliops}}">
+      <view class="list_me_imageleft">
+        <image src="../../images/wdgl.png"></image>
+      </view>
+      <view class="list_me_y">成为组织者</view>
+      <view class="list_me_imageright">
+        <image src="../../images/look.png"></image>
+      </view>
+    </view>
+    <view class="list_me" bindtap="guanYinfn">
+      <view class="list_me_imageleft">
+        <image src="../../images/wgzdy.png"></image>
+      </view>
+      <view class="list_me_y">我关注的营</view>
+      <view class="list_me_imageright">
+        <image src="../../images/look.png"></image>
+      </view>
+    </view>
+    <view class="list_me" bindtap="commonproblem">
+      <view class="list_me_imageleft">
+        <image src="../../images/cjwt.png"></image>
+      </view>
+      <view class="list_me_y">常见问题</view>
+      <view class="list_me_imageright">
+        <image src="../../images/look.png"></image>
+      </view>
+    </view>
+    <view class="list_me" bindtap="clanlianopstion">
+      <view class="list_me_imageleft">
+        <image src="../../images/lian.png"></image>
+      </view>
+      <view class="list_me_y">联系我们</view>
+      <view class="list_me_imageright">
+        <image src="../../images/look.png"></image>
+      </view>
+    </view>
+  </view>
+
+</view>
+<view class="bbg_fex" wx:if="{{isCenter}}"></view>
+<view class="bbg_fexcenter" wx:if="{{isCenter}}">
+  <view class="title_pasd">请输入管理端密码</view>
+  <view class="pasd_int">
+    <input type="password" value="{{pasdfnv}}" placeholder="请输入管理端密码" bindinput="pasdFn" />
+
+  </view>
+  <view class="wangjilop" bindtap="opsmagFn">手机验证码登录</view>
+  <view class="bot_but">
+    <view class="qu_no" bindtap="nogoadministration">取消</view>
+    <view class="que_yes" bindtap="goadministration" data-admin_id="{{admin_id}}">确定</view>
+  </view>
+</view>
+
+<view class="bbg_fex" wx:if="{{isCenters}}"></view>
+<view class="bbg_fexcenters" wx:if="{{isCenters}}">
+  <view class="title_pasd">验证码登陆</view>
+  <view class="gosignup_row">
+    <view class="gosignup_leftnames">手机号</view>
+    <view class="inp_gosignup">
+      <input value="{{phone_tel}}" type="number" placeholder="请输入您的手机号" bindinput="usertelFn" />
+    </view>
+  </view>
+  <view class="gosignup_row">
+    <view class="gosignup_leftnames">验证码</view>
+    <view class="inp_gosignup">
+      <input value="{{msg_code}}" placeholder="请输入您的验证码" bindinput="msg_codeFn" />
+    </view>
+    <button class="butn" bindtap="verifyCodeEvents" type="default" disabled="{{buttonDisable}}">{{buttonDisable === true?verifyCodeTime:'获取验证码'}}</button>
+  </view>
+  <view class="bot_but">
+    <view class="qu_no" bindtap="nogoadministrations">取消</view>
+    <view class="que_yes" bindtap="goadministrations" data-admin_id="{{admin_id}}">确定</view>
+  </view>
+</view>
+<view class="bbg_fex" wx:if="{{isCentersfrom}}" bindtap="isshowFn"></view>
+<view class="formsecenter" wx:if="{{isCentersfrom}}">
+  <view class="title-formcenter">注册成为组织者</view>
+  <view class="gosignup_navp">
+    <view class="gosignup_row">
+      <view class="gosignup_leftname">姓名</view>
+      <view class="inp_gosignup" style="margin-left:150rpx;">
+        <input value="{{user_Name_rest}}" placeholder="请输入您的姓名" bindinput="userninDminfn" />
+      </view>
+    </view>
+
+    <view class="gosignup_row">
+      <view class="gosignup_leftname">账号</view>
+      <view class="inp_gosignup" style="margin-left:150rpx;">
+        <input value="{{user_Ghao}}" placeholder="请输入您的账号" bindinput="zhanghuserFn" />
+      </view>
+    </view>
+    <view class="gosignup_row">
+      <view class="gosignup_leftname">密码</view>
+      <view class="inp_gosignup" style="margin-left:150rpx;">
+        <input value="{{pad_word}}" placeholder="请输入您的密码" bindinput="psaduserFn" />
+      </view>
+    </view>
+    <view class="gosignup_row">
+      <view class="gosignup_leftname">手机号</view>
+      <view class="inp_gosignup" style="margin-left:150rpx;">
+        <input value="{{phone_tel}}" type="number" placeholder="请输入您的电话" bindinput="usertelFn" />
+      </view>
+
+    </view>
+    <view class="gosignup_row">
+      <view class="gosignup_leftname">验证码</view>
+      <view class="inp_gosignup">
+        <input value="{{msg_code}}" placeholder="请输入您的验证码" bindinput="msg_codeFn" />
+      </view>
+      <button class="butn" bindtap="verifyCodeEvent" type="default" disabled="{{buttonDisable}}">{{buttonDisable === true?verifyCodeTime:'获取验证码'}}</button>
+    </view>
+    <view class="me-cecn-bot">
+      <view class="restersubmit" bindtap="resubFn">注册并审核</view>
+      <view class="cent_me_qu" bindtap="qutuiFn">取消</view>
+    </view>
+
+  </view>
+</view>
+<view class="telops_clenter" bindtap="telceguan" wx:if="{{telIsshow}}"></view>
+<view class="lian_view" wx:if="{{telIsshow}}">
+<view class="kefu" style="">
+    <button class="butonps"open-type="contact"style="background: rgb(66, 21, 0);padding:0;margin:0;border:none;display:block;color:white;line-height:50rpx;font-size:14px;border-radius: 10rpx;" role="button"aria-disabled="false">联系客服</button>
+</view>
+<view class="opstel" bindtap="tel">
+  拨打电话
+</view>
+
+</view>

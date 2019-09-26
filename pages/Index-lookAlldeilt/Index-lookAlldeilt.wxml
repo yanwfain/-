@@ -1,0 +1,63 @@
+<view class="dv">
+  <view class="title_noter">
+    {{detailcont.name}}
+  </view>
+    <view class="name_noertops" >{{detailcont.option_admin_name}}</view>
+  <view class="segmentation">
+    <view class='time_noter_left'></view>
+    <view class="time_noter">{{detailcont.create_time}} </view>
+    <view class='time_noter_right'></view>
+  </view>
+  <view class="txt_noter">
+    <view class="toptxt_noter"><rich-text style=" overflow: hidden;text-overflow: ellipsis;height:90rpx;" nodes="{{detailcont.content}}" ></rich-text></view>
+    <!-- <image class="img_txt_noter" src="../../images/fu.png"></image> -->
+    <video class="img_txt_noter" src="{{detailcont.url}}"></video>
+    <!-- <view class="toptxt_noter noter_toptxt">六经是佛说; 则为菩萨说或造, 包括弥勒、无着、世亲、陈那等六经是佛说; 则为菩萨说或造, 包括弥勒、无着、世亲、陈那等六经是佛说; 则为菩萨说或造, 包括弥勒、无着、世亲、陈那等六经是佛说; 则为菩萨说或造, 包括弥勒、无着、世亲、陈那等六经是佛说; 则为菩萨说或造, 包括弥勒、无着、世亲、陈那等六经是佛说; 则为菩萨说或造, 包括弥勒、无着、世亲、陈那等六经是佛说; 则为菩萨说或造, 包括弥勒、无着、世亲、陈那等六经是佛说; 则为菩萨说或造, 包括弥勒、无着、世亲、陈那等      </view> -->
+    <view class="botm_noter">
+      <view class="lok_noter">
+        <image src='../../images/ll.png'></image>
+      </view>
+      <view class="bot_noter_txt">{{detailcont.detail_num}}</view>
+      <view class="lok_noter" style="margin-left:80rpx;width:36rpx;">
+        <image src='../../images/dz.png' style="width:40rpx;height:30rpx" bindtap="dianZan"></image>
+      </view>
+      <view class="bot_noter_txt" style="margin-left:15rpx;" bindtap="dianZan">{{fabulous_num}}</view>
+      <view class="lok_noter" style='margin-left:300rpx;'>
+        <image src='../../images/ly.png' style="width:30rpx;height:26rpx" bindtap="liuYfn"></image>
+      </view>
+      <view class="bot_noter_txt" bindtap="liuYfn">留言</view>
+    </view>
+  </view>
+  
+</view>
+
+<view class="bgc"></view>
+<view class="comment">
+  <view class="comment_bot">
+    <view class="new_huod">
+       <view class="new_img"><image class="img_img" src="../../images/zs.png"></image></view>
+       <view class="new_title">评论</view>
+    </view>
+    <view class="user" wx:for="{{getComment}}">
+      <view class='user_comment_bot'>
+        <view class="user_comment_cont">
+        <image src="{{item.headimg}}"></image>
+        </view>
+        <view class="user_comm">{{item.user_name}}</view>
+      </view>
+      <view class="user_txt">
+       {{item.content}}
+      </view>
+    </view>
+  </view>
+ 
+</view>
+<view class="detail-view" wx:if="{{isteast}}">
+    <textarea placeholder="请输入您要评价的内容" auto-height="true" fixed="true" show-confirm-bar="true" class='detail-textarea' auto-height='true' value="{{input_firm}}" maxlength='200' bindinput='getTextareaInput'/>
+    <view class="sub_fa" >
+      <view bindtap="sub_fasong">
+        发送
+      </view>
+    </view>
+</view>
+<scroll-view scroll-y class="bcg_fix_liu" style='height:{{scroll_height}}rpx;' bindtap="opcthide" wx:if="{{isteast}}"> </scroll-view>

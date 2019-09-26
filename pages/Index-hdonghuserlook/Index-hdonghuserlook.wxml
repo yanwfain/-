@@ -1,0 +1,10 @@
+<view class="head_lei">
+  <view class="user_nameshu">姓名</view>
+  <view class="xin_name">性别</view>
+  <view class="user_phone">手机号</view>
+</view>
+<view class="head_lei_list" wx:for="{{delits}}">
+  <view class="user_nameshu">{{item.user_name}}</view>
+  <view class="xin_name">{{item.sex_name}}</view>
+  <view class="user_phone">{{item.phone}}</view>
+</view>

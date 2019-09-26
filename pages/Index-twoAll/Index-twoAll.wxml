@@ -1,0 +1,31 @@
+<!--pages/Index-twoAll/Index-twoAll.wxml-->
+
+<view class="view_txt" wx:if="{{baizuoFn}}">
+  <view class="txt" wx:if="{{isShu}}">您上次禅修记录是百座{{round_numlun}}轮{{print_numyin}}印{{seat_numzuo}}座</view>
+  <!-- <view class="txt" wx:else>您上次禅修记录是百座{{round_numlun}}轮{{print_numyin}}印{{seat_numzuo}}座</view> -->
+    <!-- <view class="txt">您上次禅修记录是百座{{round_num}}轮{{print_num}}印{{seat_num}}座</view> -->
+  <view class="but">
+    <view bindtap="allzuoFn" wx:if="{{isbaizuoFn}}" data-idopst="baizuo">开始禅修</view>
+    <view bindtap="allzuoFn" wx:if="{{isqianzuoFn}}" data-idopst="baizuo">加座</view>
+    <view bindtap="startqianFn" wx:if="{{isqianzuoFn}}">开始千座</view>
+  </view>
+</view>
+<view class="view_txt" wx:if="{{qianzuoFn}}">
+  <view class="txt" wx:if="{{isShu}}">您上次禅修记录是千座第{{optianqt}}天第{{optianqz}}座</view>
+  <!-- <view class="txt" wx:else>您上次禅修记录是千座第{{optianqt}}天第{{optianqz}}座</view> -->
+  <!-- <view class="txt" >您上次禅修记录是千座第{{day_num}}天第{{seat_nums}}座</view> -->
+  <view class="but">
+    <view bindtap="jiaqianFn">加座</view>
+    <!-- <view></view> -->
+  </view>
+</view>
+<view class="view_txt" wx:if="{{kongIsops}}">
+  <view class="txt" wx:if="{{isShu}}">您上次禅修记录是千座第{{day_num}}天第{{seat_nums}}座</view>
+  <view class="txt" wx:else>您上次禅修记录是千座第{{optianqt}}天第{{optianqz}}座</view>
+  <!-- <view class="txt" >由于您初次禅修未结束退出了计时页面 请重新开始</view> -->
+  <view class="but">
+    <view bindtap="celarFn">清零</view>
+    <!-- <view></view> -->
+  </view>
+</view>
+ <view class="sop_tchan" style="margin-top:100rpx;" bindtap="celarFn">{{title_clener}}时长清零</view>

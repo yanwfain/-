@@ -1,0 +1,136 @@
+<view class="bgc_pd">
+  <view class="sear_topinp">
+    <view class="ser_ipnt" bindtap="isserinpt">
+      <image src="../../images/ss.png"></image>
+      <input placeholder="请输入您要搜索的内容" name="search" confirm-type="search" bindconfirm="bindconfirm" value="{{input_firm}}" />
+    </view>
+    <view class="cancel" bindtap="cancelsearchFn">
+      {{valuetitle}}
+    </view>
+
+  </view>
+</view>
+<view class="bot_bgc" wx:if="{{isHistory}}">
+  <!-- <view class="returnFnops" bindtap="returnFnfsk">返回</view> -->
+  <!-- <view class="bot_bgc" > -->
+    <view class="new_huod">
+      <view class="new_img">
+        <image class="img_img" src="../../images/zs.png"></image>
+      </view>
+      <view class="new_title">历史搜索</view>
+      <view class="new_imgl">
+        <image class="img_imgl" src="../../images/qk.png"></image>
+      </view>
+      <view class="look_you" bindtap='hdonghFn'>清空所有历史记录 </view>
+    </view>
+    <view class="jilu" wx:for="{{historicals}}" wx:key="{{index}}" data-item="{{item}}" bindtap="secrtOp">
+      <view class="new_img_jilu">
+        <image class="img_img_jilu" src="../../images/time.png"></image>
+      </view>
+      <view class="new_title_jilu">{{item}}</view>
+    </view>
+  </view>
+<view class="bot_bgc">
+  <view class="notr_hugu" wx:for="{{detailcont}}" bindtap='noterFnnei' data-id="{{item.id}}" data-category_id="{{item.data-category_id}}" data-user="{{item.user_id}}">
+    <view class="notr_leftimg">
+      <view class="time_pt">{{item.start_time}}-{{item.end_time}}</view>
+      <image src="{{item.img_url}}"></image>
+    </view>
+    <view class="notr_righttxt">
+      <view class="notr_titx">{{item.name}}</view>
+      <view class="notr_tits">{{item.activity_content}}</view>
+    </view>
+  </view>
+</view>
+<view class="right_bgc" wx:if="{{isfixe}}">
+  <!-- <view class="bot_bgc" wx:if="{{isHistory}}"> -->
+  <view class="returnFnops" bindtap="returnFnfsk">返回</view>
+  <view class="bot_bgc" >
+    <view class="new_huod">
+      <view class="new_img">
+        <image class="img_img" src="../../images/zs.png"></image>
+      </view>
+      <view class="new_title">历史搜索</view>
+      <view class="new_imgl">
+        <image class="img_imgl" src="../../images/qk.png"></image>
+      </view>
+      <view class="look_you" bindtap='hdonghFn'>清空所有历史记录 </view>
+    </view>
+    <view class="jilu" wx:for="{{historicals}}" wx:key="{{index}}" data-item="{{item}}" bindtap="secrtOp">
+      <view class="new_img_jilu">
+        <image class="img_img_jilu" src="../../images/time.png"></image>
+      </view>
+      <view class="new_title_jilu">{{item}}</view>
+    </view>
+  </view>
+
+  <view class="right_bgctime">
+    <view class="right_title">
+      时间
+      <text style="color:gray; font-weight: 400;font-size:28rpx;">（某一时间段内）</text>
+    </view>
+    <view class="main-item-input">
+      <picker bindchange="pickerProChange" mode="date" value="{{op}}">
+        <view class="picker-area-text">
+          {{op?op:"请选择开始时间"}}
+        </view>
+      </picker>
+      <image src="../../images/look.png"></image>
+    </view>
+    <view class="llpcenter">
+
+    </view>
+    <view class="main-item-input">
+      <picker bindchange="pickerProChanges" mode="date" value="{{ pickerProDatas }}">
+        <view class="picker-area-text">
+          {{pickerProDatas?pickerProDatas:"请选择结束时间"}}
+        </view>
+      </picker>
+      <image src="../../images/look.png"></image>
+    </view>
+  </view>
+  <view class="right_bgctime" style="margin-bottom:40rpx">
+    <view class="right_title">
+      地区
+    </view>
+    <view class="main-item-inputs">
+      <view class="comment-btn">
+
+        <button wx:for="{{riderCommentList}}" wx:for-item="item" wx:key="item.index" bindtap="checkboxChange" data-value="{{item.area_name}}" data-id="{{item.area_id}}" data-index="{{index}}" checked="{{item.selected}}" class="btn {{item.selected ? 'btn-selected' : ''}}">
+          {{item.area_name}}
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class="right_bgctime" style="margin-bottom:40rpx">
+    <view class="right_title">
+      活动天数
+    </view>
+    <view class="main-item-input">
+      <picker bindchange="pickerProChangeftian" value="{{ pickerProDataftian.index }}" range="{{ pickerProDataftian.items }}">
+        <view class="picker-area-text">
+          {{pickerProDataftian.items[pickerProDataftian.index]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="right_bgctime" style="margin-bottom:40rpx">
+    <view class="right_title">
+      活动分类
+    </view>
+    <view class="main-item-input">
+      <picker bindchange="pickerProChangef"  range="{{ pickerProDataf }}" range-key="{{'name'}}" value="{{countryIndex}}" >
+        <view class="picker-area-text">
+          {{pickerProDataf[countryIndex].name?pickerProDataf[countryIndex].name:"不限"}} 
+        </view>
+      </picker>
+      <image src="../../images/look.png"></image>
+    </view>
+  </view>
+
+  <view class="Ygos" bindtap="yesfn">
+    确定
+  </view>
+</view>
+<view class="left_bgc" bindtap="opsbbgc_if" wx:if="{{isfixe}}">
+</view>

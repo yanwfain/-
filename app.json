@@ -1,0 +1,79 @@
+{
+  "pages": [   
+    
+      "pages/Index-index/Index-index",
+      "pages/Index-searchFn/Index-searchFn",
+      "pages/Index-lookwanqiFn/Index-lookwanqiFn",
+      "pages/Index-lookAll/Index-lookAll",
+      "pages/Index-lookAlldeilt/Index-lookAlldeilt",
+      "pages/Index-hdonghFn/Index-hdonghFn",
+      "pages/Index-noter/Index-noter",
+      "pages/Index-hdonghdelit/Index-hdonghdelit",
+      "pages/Index-hdonghuserlook/Index-hdonghuserlook",
+      "pages/Index-gosignup/Index-gosignup",
+      "pages/Index-lookAllnewdeilt/Index-lookAllnewdeilt",
+      "pages/Index-center/Index-center",
+      "pages/Index-beginmeditation/Index-beginmeditation",
+      "pages/Index-twoAll/Index-twoAll",
+      "pages/Index-xinMiFn/Index-xinMiFn",
+      "pages/Index-xinQiFn/Index-xinQiFn",
+      "pages/Index-statuGo/Index-statuGo",
+      "pages/Index-Duantime/Index-Duantime",
+      "pages/Index-meChanxui/Index-meChanxui",
+      "pages/Index-ime/Index-ime",  
+      "pages/Index-editFn/Index-editFn",
+      "pages/Index-guanYinfn/Index-guanYinfn",
+      "pages/Index-xiaoFn/Index-xiaoFn",
+      "pages/Index-releaseYfn/Index-releaseYfn",
+      "pages/Index-releaseYfndeilt/Index-releaseYfndeilt",
+      "pages/Index-botreleaseFn/Index-botreleaseFn",
+      
+      "pages/Index-administration/Index-administration",
+      "pages/Index-commonproblem/Index-commonproblem",
+      "pages/Index-commproFndeilt/Index-commproFndeilt"
+
+  ],
+  "requiredBackgroundModes": ["audio"],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#421500",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#fafafa",
+    "enablePullDownRefresh": true,
+    "withShareTicket": true
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "enablePullDownRefresh": true,
+  "tabBar": {
+    "custom":true,
+    "color": "#FFFFFF",
+    "selectedColor": "#FFFFFF",
+    "backgroundColor": "#421500",
+    "backgroundTextStyle": "light",
+    "list": [
+      {
+        "pagePath": "pages/Index-index/Index-index",
+        "text": "主页",
+        "iconPath": "images/首页空.png",
+        "selectedIconPath": "images/首页空.png"
+      },
+
+      {
+        "pagePath": "pages/Index-ime/Index-ime",
+        "text": "个人中心",
+        "iconPath": "images/我的空.png",
+        "selectedIconPath": "images/我的空.png"
+      }
+    ]
+    },
+
+  "navigateToMiniProgramAppIdList": [
+    "wxf5b37370c57a2db9",
+    "wx6c653b3b961fb92a"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

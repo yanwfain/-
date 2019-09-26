@@ -1,0 +1,118 @@
+/* pages/Index-beginmeditation/Index-beginmeditation.wxss */
+page{
+  background: rgb(245, 237, 234)
+}
+.dv_nivtar{
+  width: 90%;
+  margin: 0 auto;
+  height: 200rpx;
+  margin-top:30rpx;
+  position: relative;
+
+}
+.dv_nivtar image{
+   width: 100%;
+  height: 200rpx;
+  position: absolute;
+  top:0;
+  left: 0;
+
+}
+.vie-top{
+  width: 100%;
+  text-align: center;
+  line-height: 50rpx;
+  position: absolute;
+  top:42rpx;
+  left: 0;
+  color: rgb(66, 21, 0);
+  font-size: 40rpx;
+}
+.vie-txt{
+  width: 100%;
+   text-align: center;
+  line-height: 50rpx;
+  position: absolute;
+  bottom: 54rpx;
+  font-size: 30rpx;
+  color: gray;
+}
+.jilu{
+  display: flex;
+  width: 100%;
+  height: 180rpx;
+  margin: 0 auto;
+  margin-top:50rpx;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+/* justify-content: space-around; */
+  
+}
+.jilu_img{
+  width: 130rpx;
+  height: 130rpx;
+}
+.jilu_img image{
+  width: 130rpx;
+  height: 130rpx;
+}
+.jilu_txt{
+  font-size: 30rpx;
+  color:black;
+}
+.buttons{
+  position: fixed;
+  z-index: 999;
+  width: 300rpx;
+  height: 300rpx;
+  margin:0 auto;
+  background: rgb(0, 0, 0);
+  opacity: .9;
+  left:30%;
+  top:40%;
+  text-align: center;
+  align-items: center;
+  border-radius: 10rpx;
+
+}
+.buttons image{
+  height: 140rpx;
+width: 140rpx;
+margin: 30rpx auto;
+border-radius: 200rpx;
+display: block;
+}
+/* .buttons button{
+  background: rgb(66, 21, 0);
+  color: white;
+
+} */
+.formid{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 150rpx;
+  /* display: block;
+margin-left: auto;
+margin-right: auto;
+padding-left: 0px;
+padding-right: 0px;
+box-sizing: border-box;
+font-size: 18px;
+text-align: center;
+text-decoration: none;
+line-height: none;
+border-radius: 0px;
+-webkit-tap-highlight-color: transparent;
+background-color: rgb(245, 237, 234); */
+opacity: 0;
+
+}
+
+button::after {
+  border: none;
+}

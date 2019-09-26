@@ -1,0 +1,37 @@
+
+
+<view >
+  <view class="dv_nivtar" wx:for="{{indexst}}" bindtap="statuGo"  data-index="{{item.idx}}" data-meditation_type="{{item.meditation_type}}" data-loit="{{item.loit}}">
+    <image src="{{item.img}}"></image>
+    <view class="vie-top">— {{item.loit}} —</view>
+    <view class="vie-txt">{{item.txt}}</view>
+  </view>
+    <!-- <view class="dv_nivtar" bindtap="statuGo"  data-index="{{item.idx}}">
+    <image src="../../images/1b.png"></image>
+    <view class="vie-top">— 念佛 —</view>
+    <view class="vie-txt">无有分别无取无舍</view>
+  </view>
+    <view class="dv_nivtar" bindtap="statuGo"  data-index="{{item.idx}}">
+    <image src="../../images/1b.png"></image>
+    <view class="vie-top">— 持咒 —</view>
+    <view class="vie-txt">化解当下恶业识为善业识</view>
+  </view>
+    <view class="dv_nivtar" bindtap="statuGo"  data-index="{{item.idx}}">
+    <image src="../../images/1b.png"></image>
+    <view class="vie-top">— 心密打坐 —</view>
+    <view class="vie-txt">闪烁着灵魂感悟的灵感的霞光</view>
+  </view> -->
+
+</view>
+
+<view class="jilu" bindtap="jiLufn">
+  <view class="jilu_img"><image src="../../images/jilu.png"></image> </view>
+  <view class="jilu_txt">禅修记录</view>
+</view>
+<view style="height:100rpx;"></view>
+<view class='buttons' wx:if="{{!hasUserInfo}}" catchtouchmove='preventD'>
+  <view class='butt'>
+    <image src='../../images/cx.png'></image>
+    <button size='mini' class='getUser' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 请求微信授权 </button>
+  </view>
+</view>

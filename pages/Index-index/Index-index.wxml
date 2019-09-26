@@ -1,0 +1,93 @@
+<view class="searchBox">
+  <swiper class='shop_swiper' indicator-dots autoplay="true" interval="3000" duration="1000" circular='true' hidden='{{luboActive}}' class='lbImg'>
+    <block wx:for="{{detail}}" wx:key="">
+      <swiper-item class="imgheight">
+        <image src="{{item.img_url}}" class='lbImg' data-id='{{item.id}}' data-id="{{item.id}}" data-activities_id='{{item.activities_id}}' bindtap='goChannel' />
+      </swiper-item>
+    </block>
+
+  </swiper>
+</view>
+<view class="conSuo">
+  <view class="suo_nav" bindtap="searchFn">
+    <image src="../../images/ss.png"></image>
+    <input placeholder='{{ittitls}}' disabled="disabled"></input>
+  </view>
+  <view class="con_box">
+    <view class='nav'>
+      <block wx:for='{{navList}}'>
+        <view class='itemClass' bindtap='getItemCode' data-id='{{item.id}}'>
+          <form bindsubmit="form_submit" report-submit='true'>
+            <button form-type="submit" class='formid'> </button>
+          </form>
+          <image class='itemImg' src="{{item.url}}" data-sys='{{item.sysShopTypeInfos}}' data-typeName='{{item.typeName}}' data-typeCode='{{item.typeCode}}'></image>
+          <text class='itemText' data-sys='{{item.sysShopTypeInfos}}' data-code='{{item.code}}' data-typeName='{{item.typeName}}' data-typeCode='{{item.typeCode}}'>{{item.name}}</text>
+        </view>
+
+      </block>
+    </view>
+    <view class="new_huod">
+      <view class="new_img">
+        <image class="img_img" src="../../images/zs.png"></image>
+      </view>
+      <view class="new_title">最新发布的营</view>
+      <view class="look_you" bindtap='hdonghFn'>查看所有 ></view>
+    </view>
+    <view class="new_cont" bindtap="noterFnnei" wx:for="{{getNewActive}}" data-id="{{item.id}}">
+      <view class="new_contxt">
+        {{item.name}}
+      </view>
+      <view class="new_contimg">
+        <image src="../../images/look.png"></image>
+      </view>
+    </view>
+
+    <view class="new_huod" wx:if="{{ioops==1}}">
+      <view class="new_img">
+        <image class="img_img" src="../../images/zs.png"></image>
+      </view>
+      <view class="new_title">视频·访谈</view>
+      <view class="look_you" bindtap="lookAll">查看所有 ></view>
+    </view>
+    <view class="going_vio">
+      <view class="vie_nav" bindtap="video_delit" wx:for="{{getVideo}}" data-id="{{item.id}}">
+        <view class="vieo_go">
+          <image src="{{item.img_url}}"></image>
+        </view>
+        <!-- <video class="" src=""></video> -->
+        <view class="vie_tit">{{item.name}}</view>
+        <view class="vie_txt">{{item.content}}</view>
+      </view>
+
+      <!-- <image src="../../images/avatar.png"></image> -->
+
+    </view>
+    <view class="new_huod">
+      <view class="new_img">
+        <image class="img_img" src="../../images/zs.png"></image>
+      </view>
+      <view class="new_title">学员分享</view>
+      <view class="look_you" bindtap="lookwanqiFn">查看所有 ></view>
+    </view>
+    <view class="notr_hugu" wx:for="{{wenzhang}}" bindtap='noterFn' data-id="{{item.id}}">
+      <view class="notr_leftimg">
+        <image src="{{item.img_url}}"></image>
+      </view>
+      <view class="notr_righttxt">
+        <view class="notr_titx">{{item.name}}</view>
+        <view class="notr_tits">{{item.content}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+<view class="dv_bot_tom_kkk"></view>
+
+<!-- <view class='buttons' wx:if="{{!hasUserInfo}}" catchtouchmove='preventD'>
+  <view class='butt'>
+    <image src='../../images/cx.png'></image>
+    <button size='mini' class='getUser' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 请求微信授权 </button>
+  </view>
+</view> -->
+
+    <button class="fisbutn" open-type="contact"style=" position: fixed;top:45%;right:3%;z-index:999; background: rgb(66, 21, 0);padding:0;margin:0;border:none;display:block;color:white;line-height:50rpx;font-size:14px;border-radius: 10rpx;" role="button"aria-disabled="false"> <image  src="../../images/709ae6f5b0c5898323cdd2bdf640d63.png">联系客服</image></button>

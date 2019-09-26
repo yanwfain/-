@@ -1,0 +1,134 @@
+<view class="top_left_top" style="font-size:24rpx;color:gray">
+  <!-- 首次使用请设置初始座次    -->
+  <!-- 1.如果是初次请设置初始日座次，今日是第{{detilds}}座 -->
+  <view style="margin-bottom:8rpx;" style="font-size:28rpx;color:black">说明</view>
+  <view style="margin-bottom:8rpx;">1.如果是初次请设置初始日座次，今日是第几座。</view>
+  <view style="margin-bottom:8rpx;">2.初次进入，百座和千座只能选择其中一个进行禅修。</view>
+  <view style="margin-bottom:8rpx;">3.初次进入完成心密打坐之后，当您下次进来就会记录您上次的心密打坐。</view>
+  <view style="margin-bottom:8rpx;">4.开始时尽量避免离开倒计时页面</view>
+  <view style="margin-bottom:8rpx;">5.如果非初次禅修且开始倒计时未完成退出页面即不记录，请重新选择进入</view>
+  <view style="margin-bottom:8rpx;"></view>
+</view>
+<view class="optchekd">
+  <radio-group bindchange="ycf">
+    <radio value="1" class="opchekd1">选定百座</radio>
+    
+    <radio value="2" class="opchekd2">选定千座</radio>
+  </radio-group>
+</view>
+<view class="new_huod">
+  <view class="new_img">
+    <image class="img_img" src="../../images/zs.png"></image>
+  </view>
+  <view class="new_title">百座</view>
+
+</view>
+
+<view class="opsitbai">
+
+<view class="topbgc" wx:if="{{topbgcFn}}"></view>
+<view class="right_bgctime" style="margin-bottom:40rpx">
+  <view class="mi_dviw">
+    <view class="main-item-input" wx:if="{{isPicker}}">
+      <picker bindchange="pickerProChangeds" value="{{ pickerProDatads.index }}" range="{{ pickerProDatads.items }}">
+        <view class="picker-area-text">
+          {{pickerProDatads.items[pickerProDatads.index]?pickerProDatads.items[pickerProDatads.index]:'请选择'}}
+        </view>
+      </picker>
+      <image src="../../images/look.png"></image>
+    </view>
+    <view class="opltishide" wx:else>{{round_num}}</view>
+    <view class="right_title">
+      轮
+    </view>
+  </view>
+  <view class="mi_dviw">
+    <view class="main-item-input" wx:if="{{isPicker}}">
+      <picker bindchange="pickerProChangedo" value="{{ pickerProDatado.index }}" range="{{ pickerProDatado.items }}">
+        <view class="picker-area-text">
+          {{pickerProDatado.items[pickerProDatado.index]?pickerProDatado.items[pickerProDatado.index]:'请选择'}}
+        </view>
+      </picker>
+      <image src="../../images/look.png"></image>
+    </view>
+    <view class="opltishide" wx:else>{{print_num}}</view>
+    <view class="right_title">
+      印
+    </view>
+  </view>
+  <view class="mi_dviw">
+    <view class="main-item-input" wx:if="{{isPicker}}">
+      <picker bindchange="pickerProChangedt" value="{{ pickerProDatadt.index }}" range="{{ pickerProDatadt.items }}">
+        <view class="picker-area-text">
+          {{pickerProDatadt.items[pickerProDatadt.index]?pickerProDatadt.items[pickerProDatadt.index]:'请选择'}}
+        </view>
+      </picker>
+      <image src="../../images/look.png"></image>
+    </view>
+    <view class="opltishide" wx:else>{{seat_num}}</view>
+    <view class="right_title">
+      座
+    </view>
+  </view>
+</view>
+<view class="me_que">
+  <view bindtap="baiFn" data-idopst="baizuo">开始</view>
+  <!-- <view bindtap="qianZuofn" data-idopst="qianzuo" wx:if="{{detilds>96}}">开始千座</view> -->
+  <!-- <view bindtap="qianZuofn" data-idopst="qianzuo">开始千座</view> -->
+
+</view>
+</view>
+<!-- <view class="fenge"></view> -->
+<view class="new_huod">
+       <view class="new_img"><image class="img_img" src="../../images/zs.png"></image></view>
+       <view class="new_title">千座</view>
+</view>
+
+<view class="botbgcqian">
+<view class="botbgc" wx:if="{{botbgcFn}}"></view>
+
+<view class="qian_zuo">
+  <view class="mi_dviwee">
+       <view class="main-item-inputo" >
+            <!-- <picker bindchange="pickerProChangedst" value="{{ pickerProDatadst.index }}" range="{{ pickerProDatadst.items }}">
+              <view class="picker-area-text">
+                {{pickerProDatadst.items[pickerProDatadst.index]}} 
+              </view>
+            </picker> -->
+            <input value="{{optian}}" type="number" bindinput="optianFn" placeholder="请输入" />
+            <!-- <image src="../../images/look.png"></image> -->
+      </view>
+      <view class="tiaan">天</view>
+      <view class="right_titleo">（坚持千座的第几天)</view>
+     
+  </view>
+  <view class="mi_dviwee">
+       <view class="main-item-inputo" >
+            <!-- <picker bindchange="pickerProChangedsq" value="{{ pickerProDatadsq.index }}" range="{{ pickerProDatadsq.items }}">
+              <view class="picker-area-text">
+                {{pickerProDatadsq.items[pickerProDatadsq.index]}} 
+              </view>
+            </picker> -->
+              <input value="{{optians}}" type="number" bindinput="optiansFn" placeholder="请输入" />
+            <!-- <image src="../../images/look.png"></image> -->
+      </view>
+      <view class="tiaan">天</view>
+      <view class="right_titleo"> 
+      （坚持千座的第几座，如果记不清加座的次数，可与天数相同)
+      </view>
+  </view>
+
+</view>
+  <view class="me_que_top" bindtap="qianZuofn">
+      <!-- <view >开始</view> -->
+      开始
+  </view>
+  </view>
+  <!-- <view class="sop_tchan" style="margin-top:100rpx;" bindtap="celarFn" wx:if="{{idx==3}}">{{title_clener}}时长清零</view> -->
+
+
+  <view class='buttons' wx:if="{{!hasUserInfo}}" catchtouchmove='preventD'>
+
+</view>
+<view style="height:100rpx;">
+</view>

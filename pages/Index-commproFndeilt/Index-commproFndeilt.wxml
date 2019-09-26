@@ -1,0 +1,10 @@
+<!--pages/Index-commproFndeilt/Index-commproFndeilt.wxml-->
+<view class="bgc_p">
+  <view class="deilt_commtit">
+    {{name}}
+  </view>
+  <view class="txt_one">
+ {{content}}
+  </view>
+
+</view>

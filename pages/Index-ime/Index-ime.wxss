@@ -1,0 +1,387 @@
+page{
+  background: rgb(245, 237, 234);
+}
+.butt{
+  width: 60%;
+  margin: 0 auto;
+  margin-top:50rpx;
+  margin-bottom:50rpx;
+ padding: 20rpx;
+  /* background: rgba(66, 184, 30, 0.767); */
+  border-radius: 20rpx;
+}
+.getUser{
+  width: 100%;
+  /* padding: 20rpx; */
+  background: rgb(67, 218, 22, 0.767);
+  margin: 0 auto;
+  border-radius: 50rpx;
+}
+.bgc_me{
+  background: rgb(245, 237, 234);
+  width: 100%;
+  }
+  .me_topname{
+    width: 100%;
+    height: 500rpx;
+    margin: 0 auto;
+    /* background-image: url('../../images/30-纯色背景.png'); */
+    position:relative;
+
+  }
+  .imgpos{
+    width: 100%;
+    height:340rpx;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2
+  }
+.imgpos image{
+    width: 100%;
+    height: 340rpx;
+}
+.me_centername{
+    width: 90%;
+    height:440rpx;
+    position: absolute;
+    top:20rpx;
+    left:36rpx;
+    z-index:4
+}
+.imgposn{
+    width: 100%;
+    height:440rpx;
+}
+.imgposn image{
+  width: 100%;
+  height: 440rpx;
+}
+.name_meimg{
+  position:absolute;
+  z-index: 5;
+  top:20%;
+  left:30%;
+  align-items: center;
+  text-align: center;
+  width: 300rpx;
+}
+.user_name{
+  width:100rpx;
+  height:100rpx;
+  margin-left:100rpx;
+}
+.user_name image{
+  width:100rpx;
+  height:100rpx;
+}
+.user_title{
+  margin-top:10rpx;
+  text-align: center;
+  color: #421500;
+  font-weight: 700;
+}
+.name_meimg_left{
+  position:absolute;
+  z-index: 5;
+  top:60%;
+  left:24%;
+}
+.user_name_left{
+   width:30rpx;
+  height:30rpx;
+  margin-left: 18rpx;
+  
+}
+.user_name_left image{
+   width:30rpx;
+  height:30rpx;
+}
+.user_title_left{
+  color: #421500;
+}
+
+
+
+.name_meimg_right{
+  position:absolute;
+  z-index: 5;
+  top:60%;
+  right:26%;
+}
+.user_name_right{
+   width:30rpx;
+  height:30rpx;
+  margin-left: 18rpx;
+  
+}
+.user_name_right image{
+   width:30rpx;
+  height:30rpx;
+}
+.user_title_right{
+  color: #421500;
+}
+.list_me{
+  width: 90%;
+  height: 80rpx;
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+  display: flex;
+  margin: 0 auto;
+  line-height: 80rpx;
+  position:relative;
+  border-bottom: 1rpx solid #EBD9D2;
+
+}
+.list_me_imageleft{
+  width:30rpx;
+  height: 36rpx;
+  margin-top:10rpx;
+  margin-right:20rpx;
+}
+.list_me_imageleft image{
+  width:30rpx;
+  height: 36rpx;
+}
+.list_me_imageright{
+   width:20rpx;
+  height: 30rpx;
+  position: absolute;
+  top:20rpx;
+  right:10rpx;
+}
+.list_me_imageright image{
+   width:20rpx;
+  height: 30rpx;
+}
+.list_me_y{
+  font-size: 30rpx;
+  color:#421500;
+}
+.bbg_fex{
+  position: fixed;
+  background: gray;
+  opacity: .7;
+  width: 100%;
+  height: 1500rpx;
+  top:0;
+  left:0;
+  z-index: 99
+}
+.bbg_fexcenter{
+  position: fixed;
+  width: 500rpx;
+  /* height: 330rpx; */
+  margin: 0 auto;
+  padding: 20rpx;
+  background:rgb(245, 237, 234);
+  top:400rpx;
+  left:100rpx;
+  z-index: 999;
+  overflow: hidden;
+}
+.bbg_fexcenters{
+  position: fixed;
+  width: 84%;
+  height: 380rpx;
+  margin: 0 auto;
+  padding: 20rpx;
+  border-radius: 10px;
+  background:rgb(245, 237, 234);
+  top:400rpx;
+  left:0;
+  right: 0;
+  z-index: 999;
+  overflow: hidden;
+}
+.title_pasd{
+  text-align: center;
+
+}
+.pasd_int{
+  width: 80%;
+  margin: 0 auto;
+  background: rgb(239, 225, 222);
+  padding: 10rpx;
+  border-radius: 60rpx;
+  margin-top:50rpx;
+}
+.pasd_int input{
+  padding: 10rpx;
+  font-size: 26rpx;
+}
+.bot_but{
+  display: flex;
+  margin-top:54rpx;
+}
+.bot_but .qu_no{
+  width: 49%;
+  border-top:1rpx solid #F0E4DE;
+  border-right:1rpx solid #F0E4DE;
+  padding: 30rpx;
+  text-align: center;
+}
+.bot_but .que_yes{
+  width: 49%;
+  border-top:1rpx solid #F0E4DE;
+  padding: 30rpx;
+  text-align: center;
+}
+.formsecenter{
+  position: fixed;
+  z-index: 999;
+  width: 96%;
+  height:820rpx;
+  top:150rpx;
+  left:2%;
+  background: rgb(245, 237, 234);
+  border-radius: 10rpx;
+
+}
+.gosignup_navp{
+  width: 94%;
+  margin: 0 auto;
+   padding: 20rpx;
+  
+}
+.gosignup_row{
+  padding-bottom: 30rpx;
+  padding-top:30rpx;
+  padding-left:20rpx;
+  padding-right:20rpx;
+
+  width: 90%;
+  border-bottom: 1rpx solid #DFD9D2;
+  margin: 0 auto;
+   display: flex;
+  flex-direction:row;
+
+}
+.gosignup_leftname{
+  width: 230rpx;
+  font-size: 30rpx;
+  color:black;
+  /* position:absolute;
+  left:0; */
+}
+.gosignup_leftnames{
+   width: 120rpx;
+  font-size: 30rpx;
+  color:black;
+}
+.inp_gosignup{
+  display: flex;
+
+}
+.title-formcenter{
+  padding: 20rpx;
+  text-align: center;
+  margin:0 auto;
+  color:rgb(66, 21, 0);
+  font-size: 34rpx;
+  font-weight: 600;
+
+}
+.restersubmit{
+  width: 200rpx;
+  height:80rpx;
+  background: rgb(66, 21, 0);
+  color:white;
+  margin:0 auto;
+  text-align: center;
+  line-height: 80rpx;
+  margin-top:50rpx;
+  border-radius: 10rpx;
+}
+.cent_me_qu{
+  width: 200rpx;
+  height:80rpx;
+  background: rgb(66, 21, 0);
+  color:white;
+  margin:0 auto;
+  text-align: center;
+  line-height: 80rpx;
+  margin-top:50rpx;
+  border-radius: 10rpx;
+}
+.me-cecn-bot{
+  display: flex;
+  height: 80rpx;
+  width: 90%;
+  margin:0 auto;
+  justify-content: center;
+}
+.formid{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100rpx;
+  height: 80rpx;
+opacity: 0;
+
+}
+
+button::after {
+  border: none;
+}
+.wangjilop{
+  width: 76%;
+  font-size: 24rpx;
+  color: rgb(39, 39, 236);
+  margin: 0 auto;
+  margin-top:2%;
+  text-align: right;
+}
+.butn{
+  border: none;
+  width:200rpx;
+  /* padding: 4rpx; */
+  font-size: 23rpx;
+  height:56rpx;
+  margin-top:-6rpx;
+  background: #421500;
+  color:white;
+  margin-left: 10rpx;
+}
+.lian_view{
+  width: 80%;
+  height: 300rpx;
+  /* padding: 20rpx; */
+  position: fixed;
+  top:30%;
+  left:10%;
+
+  background: rgb(245, 237, 234);
+  z-index: 999
+}
+.kefu{
+  width:50%;
+  margin:0 auto;
+  margin-top:10%;
+  background: rgb(66, 21, 0);
+  border-radius: 10rpx;
+}
+.opstel{
+  width: 50%;
+  margin: 0 auto;
+  margin-top:10%;
+  background: rgb(248, 248, 248);
+  border-radius: 10rpx;
+  line-height: 52rpx;
+  text-align: center;
+  font-size: 14px;
+  background: rgb(66, 21, 0);
+  color: white;
+
+}
+.telops_clenter{
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  background: gray;
+  opacity: .8;
+  z-index: 998;
+}

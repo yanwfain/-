@@ -1,0 +1,16 @@
+<!--pages/Index-lookAll/Index-lookAll.wxml-->
+<view class="bgc_lookall">
+  <view class="lookall_nav">
+     <view class="going_vio">
+      <view class="vie_nav" bindtap="video_delit" wx:for="{{getVideo}}" data-id="{{item.id}}" >
+        <view class="vieo_go"><image src="{{item.img_url}}"></image></view>
+        <view class="vie_tit">{{item.name}}</view>
+        <view class="vie_txt">{{item.content}}</view>
+      </view>
+     
+    <!-- <image src="../../images/avatar.png"></image> -->
+      
+    </view>
+  </view>
+
+</view>

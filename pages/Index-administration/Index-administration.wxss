@@ -1,0 +1,99 @@
+page{
+  background:  #F5EDEA;
+  
+}
+.default{color:gray;}
+
+.topConduct{
+   background: rgb(66, 21, 0);
+  padding: 10rpx;
+  display:flex;
+  /* flex-wrap:wrap; */
+  /* justify-content:space-around; */
+  margin:0 auto;
+  text-align: center;
+  line-height: 50rpx;
+  /* color:w; */
+  color:white;
+  font-size: 30rpx;
+  border-bottom:2rpx solid rgb(157, 159, 161);
+  overflow-y: scroll;
+  white-space: nowrap; 
+}
+.topConduct view{
+  width:100rpx;
+   margin:25rpx;
+  text-align:center;
+  font-size:30rpx;
+  /* border-bottom:2rpx solid rgb(157, 159, 161); */
+}
+.bgc{
+    background: #F5EDEA;
+    width: 94%;
+    /* height: 1500rpx; */
+    padding: 20rpx;
+}
+.notr_hugu{
+  width:98%;
+  height:160rpx;
+  /* border-radius: 10rpx; */
+  display: flex;
+  padding: 2%;
+  border-bottom:1rpx solid #EBD9D2;
+  margin-top:14rpx;
+  position: relative;
+}
+.bian_ji{
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top:30rpx;
+  right: 30rpx;
+}
+.bian_ji image{
+  width:30rpx;
+  height: 30rpx;
+}
+.notr_leftimg{
+  width:260rpx;
+  height:150rpx;
+  position: relative;
+}
+.notr_leftimg image{
+  width: 100%;
+  height:100%;
+  border-radius: 10rpx;
+}
+.notr_righttxt{
+  width: 50%;
+  height:160rpx;
+  margin-left:20rpx;
+  padding: 10rpx;
+}
+.notr_titx{
+  font-size: 28rpx;
+  color: black;
+  font-weight:560;
+}
+.notr_tits{
+  margin-top:24rpx;
+  font-size: 23rpx;
+  color: #9F9E9D;
+text-overflow: -o-ellipsis-lastline;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+
+}
+.time_pt{
+  position:absolute;
+  width: 100%;
+  height: 30rpx;
+  background: black;
+  color:white;
+  font-size: 20rpx;
+  text-align: center;
+  bottom: 0;
+}

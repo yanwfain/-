@@ -1,0 +1,8 @@
+<view class="comm_dv" bindtap="commproFndeilt" wx:for="{{delit}}" data-content="{{item.content}}" data-name="{{item.name}}">
+  <view class="txt_comm">
+    {{item.name}}
+  </view>
+  <view class="look_comming">
+    <image src="../../images/look.png"></image>
+  </view>
+</view>

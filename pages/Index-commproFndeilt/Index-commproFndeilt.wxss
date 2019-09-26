@@ -1,0 +1,30 @@
+/* pages/Index-commproFndeilt/Index-commproFndeilt.wxss */
+page{
+  background: rgb(  245, 237, 234)   ;
+
+
+}
+.bgc_p{
+  width: 90%;
+  margin: 0 auto;
+  padding: 30rpx;
+}
+.deilt_commtit{
+  color: black;
+  font-weight: 600;
+  margin-bottom: 30rpx;
+}
+.txt_one{
+  padding-bottom: 20rpx;
+color: #6A6A6A;
+font-size: 30rpx;
+
+}
+.img_comm{
+  width: 100%;
+  height: 400rpx;
+}
+.img_comm image{
+  width: 100%;
+  height: 400rpx;
+}

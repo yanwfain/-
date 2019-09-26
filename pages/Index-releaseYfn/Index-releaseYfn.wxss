@@ -1,0 +1,82 @@
+page{
+   background: #F5EDEA;
+   overflow:-Scroll;
+   overflow-x:hidden;
+}
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}
+page{
+  background: #F5EDEA;
+}
+.bgc{
+    background: #F5EDEA;
+    /* width: 100%; */
+    height: 1500rpx;
+    padding: 20rpx;
+}
+.notr_hugu{
+  width:90%;
+  height:0 auto;
+  /* border-radius: 10rpx; */
+  display: flex;
+  padding: 2%;
+  border-bottom:1rpx solid #EBD9D2;
+  margin-top:14rpx;
+}
+.notr_leftimg{
+  width:260rpx;
+  height:150rpx;
+  position: relative;
+}
+.notr_leftimg image{
+  width: 100%;
+  height:100%;
+  border-radius: 10rpx;
+}
+.notr_righttxt{
+  width: 50%;
+  height:160rpx;
+  margin-left:20rpx;
+  padding: 10rpx;
+}
+.notr_titx{
+  font-size: 28rpx;
+  color: black;
+  font-weight:560;
+}
+.notr_tits{
+  margin-top:24rpx;
+  font-size: 23rpx;
+  color: #9F9E9D;
+text-overflow: -o-ellipsis-lastline;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+
+}
+.time_pt{
+  position:absolute;
+  width: 100%;
+  height: 30rpx;
+  background: black;
+  color:white;
+  font-size: 20rpx;
+  text-align: center;
+  bottom: 0;
+}
+.bot_release{
+  position: fixed;
+  left:0;
+  bottom: 0;
+  background: #421500;
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color:white;
+}

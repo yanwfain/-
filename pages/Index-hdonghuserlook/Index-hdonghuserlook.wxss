@@ -1,0 +1,39 @@
+/* pages/Index-hdonghuserlook/Index-hdonghuserlook.wxss */
+.head_lei{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1rpx solid gray;
+  
+}
+.head_lei_list{
+    width: 90%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  margin: 0 auto;
+    border-bottom: 1rpx solid #ccc;
+}
+.head_lei view{
+  
+  height: 80rpx;
+  line-height: 80rpx;
+  
+}
+.user_nameshu{
+  width: 30%;
+  text-align: center
+}
+.xin_name{
+  width: 25%;
+  text-align: center
+  
+}
+.user_phone{
+ width: 45%;
+ text-align: center
+}

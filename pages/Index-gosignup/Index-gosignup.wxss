@@ -1,0 +1,176 @@
+page{
+  background: rgb(245, 237, 234);
+}
+/* pages/Index-gosignup/Index-gosignup.wxss */
+.bgc_gosignup{
+  width:100%;
+  background: #F5EDEA;
+  height: 1280rpx;
+ 
+}
+.gosignup_navp{
+  width: 94%;
+  margin: 0 auto;
+   padding: 20rpx;
+  
+}
+.gosignup_row{
+  padding-bottom: 30rpx;
+  padding-top:30rpx;
+  padding-left:20rpx;
+  padding-right:20rpx;
+
+  width: 90%;
+  border-bottom: 1rpx solid #DFD9D2;
+  margin: 0 auto;
+   display: flex;
+  flex-direction:row;
+
+}
+.gosignup_leftname{
+  width: 230rpx;
+  font-size: 30rpx;
+  color:black;
+  /* position:absolute;
+  left:0; */
+}
+.inp_gosignup{
+  display: flex;
+
+}
+.pos{
+    position:relative;
+}
+.main-item-input{
+
+
+}
+.picker-area-text{
+  color:#808080
+}
+.picker-area-arrow{
+  position: absolute;
+  right:20rpx;
+  top:41rpx;
+  width: 18rpx;
+  height: 25rpx;
+}
+
+.inp_gosignup input{
+  text-align: right;
+}
+.butn{
+  border: none;
+  width:200rpx;
+  /* padding: 4rpx; */
+  font-size: 23rpx;
+  height:56rpx;
+  margin-top:-6rpx;
+  background: #421500;
+  color:white;
+  margin-left: 10rpx;
+}
+.sunbum{
+  font-weight: 700;
+  color: #421500;
+}
+.zf{
+  display: flex;
+}
+.sinup_gosinup{
+  width: 400rpx;
+  height: 80rpx;
+  border-radius: 60rpx;
+  background: #421500;
+  color:white;
+  line-height: 80rpx;
+  text-align: center;
+  margin:0 auto;
+  margin-top:30rpx;
+}
+.isFlone{
+  width: 100%;
+  position:fixed;
+  top:0;
+  left:0;
+  height: 51%;
+  opacity:.7;
+  background: #7A807D;
+  z-index: 99
+}
+.isbottom{
+  width: 100%;
+  position:fixed;
+  bottom:0;
+  left:0;
+  height: 49%;
+  background: #F5EDEA;
+  z-index: 99;
+}
+.top_guanbi{
+  width: 100%;
+  margin:0 auto;
+  display: flex;
+  margin-top:10rpx;
+  padding: 20rpx;
+  border-bottom:1rpx solid #DFD9D2;
+}
+.guanbi{
+  width: 40rpx;
+  height: 40rpx;
+}
+.guanbi image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.top_title_gb{
+  /* font-weight: 700; */
+  color: #421500;
+  font-size: 40rpx;
+  margin-left:210rpx;
+}
+.big_munst_center{
+  width: 100%;
+  height: 150rpx;
+  line-height: 150rpx;
+  text-align: center;
+   font-weight: 700;
+  color: #421500;
+  font-size: 58rpx;
+}
+.fangshi{
+
+}
+.zhifu_box{
+   border-bottom:1rpx solid #DFD9D2;
+   display: flex;
+   height: 100rpx;
+   line-height: 100rpx;
+   width: 90%;
+   margin:0 auto;
+}
+.zhifu_img{
+  width:50rpx;
+  height:100rpx;
+  margin-right:30rpx;
+}
+.zhifu_img image{
+  width:56rpx;
+  height:50rpx;
+  margin-top:30rpx;
+
+}
+/* .zhifu_box radio{
+  margin-left:400rpx;
+} */
+.payment{
+   width: 400rpx;
+  height: 80rpx;
+  border-radius: 60rpx;
+  background: #421500;
+  color:white;
+  line-height: 80rpx;
+  text-align: center;
+  margin:0 auto;
+  margin-top:30rpx;
+}

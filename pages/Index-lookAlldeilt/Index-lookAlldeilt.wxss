@@ -1,0 +1,264 @@
+page{
+  background: rgb(245, 237, 234);
+}
+.dv{
+  background: #F5EDEA;
+  width: 100%;
+}
+.title_noter{
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  padding-top: 40rpx;
+  padding-bottom: 0rpx;
+  width:90%;
+  margin:0 auto;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  font-size: 36rpx;
+
+}
+.segmentation{
+ padding: 40rpx;
+  display: flex;
+  flex-direction: row;
+  /* align-items:center;
+  justify-content:center; */
+  text-align: center;
+}
+.time_noter_left{
+  height: 1rpx;
+  width: 180rpx;
+  background: #ECDBD5;
+  margin-top:20rpx;
+  margin-right:20rpx;
+}
+.time_noter{
+  font-size: 24rpx;
+  margin-left:10rpx;
+  margin-right:10rpx;
+
+}
+.time_noter_right{
+    height: 1rpx;
+  width: 180rpx;
+  background: #ECDBD5;
+  margin-top:20rpx;
+  margin-left:20rpx;
+}
+.txt_noter{
+  padding-left:30rpx;
+  padding-right:30rpx;
+  /* text-align: center; */
+}
+.toptxt_noter{
+  /* padding-top:20rpx; */
+ margin: 0 auto;
+  padding-bottom:20rpx;
+  color: #6A6A6A;
+  font-size: 30rpx;
+  overflow: hidden;
+}
+.toptxt_noter image{
+
+ margin: 0 auto;
+  width: 100%;
+  height: 100%
+}
+.img_txt_noter{
+  width:94%;
+  height:440rpx;
+  border-radius: 1rpx;
+  margin-left:10rpx;
+}
+.noter_toptxt{
+  padding-top:20rpx;
+  
+}
+.botm_noter{
+  width:100%;
+  height:50rpx;
+  display: flex;
+    /* flex-direction: center;
+  align-items:center;
+  justify-content:center; */
+  /* position:relative; */
+}
+.lok_noter{
+  width:50rpx;
+  height: 25rpx;
+
+}
+.lok_noter image{
+  width: 50rpx;
+  height: 25rpx;
+}
+.bot_noter_txt{
+  margin-top:5rpx;
+  font-size: 24rpx;
+  color:#9F9E9F;
+}
+.bot_noter_txt_right{
+  margin-left:200rpx;
+}
+.liuyan{
+  width: 50rpx;
+  height: 20rpx;
+}
+.liuyan image{
+  width: 40rpx;
+  height: 14rpx;
+}
+.bgc{
+  width:100%;
+  height:20rpx;
+  background: #EFE1DE;
+}
+.comment{
+  width:100%;
+  background: #F5EDEA;
+}
+.comment_bot{
+  padding: 40rpx;
+  width:90%;
+  margin:0 auto;
+
+}
+.new_huod{
+   display:flex;
+   /* margin-top:50rpx; */
+   /* padding- */
+}
+.new_img{
+  width: 50rpx;
+  height: 50rpx;
+  flex-direction:column;
+  align-items:center;
+   /* display:flex; */
+  justify-content:center;
+  line-height: 50rpx;
+}
+.img_img{
+  width: 40rpx;
+  height:40rpx;
+  margin-top:5rpx;
+}
+.new_title{
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width: 300rpx;
+  font-weight: 700;
+  color:rgb(67, 22, 1);
+}
+
+
+
+
+
+.user_comment_bot{
+   display:flex;
+
+
+}
+.user_comment_cont{
+  width: 50rpx;
+  height: 50rpx;
+  flex-direction:column;
+  align-items:center;
+   /* display:flex; */
+  justify-content:center;
+  line-height: 50rpx;
+}
+.user_comment_cont image{
+  width: 40rpx;
+  height:40rpx;
+  margin-top:5rpx;
+}
+.user_comm{
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  width: 300rpx;
+  /* font-weight: 700; */
+  color:rgb(29, 28, 28);
+  font-size: 30rpx;
+}
+.user{
+   margin-top:20rpx;
+    margin-bottom:10rpx;
+  
+}
+.user_txt{
+  width:80%;
+  margin: 0 auto;
+  font-size: 28rpx;
+  color:#6E6D6E;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #D8D8D8;
+}
+.detail-view {
+  /* 用于重叠 */
+  width: 100%;  
+  background: rgb(245, 237, 234);
+  height: auto;
+  position: fixed;
+  /* margin: 40rpx 20rpx; */
+  top:26%;
+  left:0;
+  min-height: 80rpx;
+  z-index: 10;
+}
+.detail-textarea {
+  /* 用于顶部与text对齐 */
+  width: 90%;
+  height: 500rpx;
+  margin: 0 auto;
+  font-size: 28rpx;
+  padding: 20rpx;
+  top:-12rpx;
+  background: rgb(239, 225, 222);
+   border-radius: 10rpx;
+   margin-top:30rpx;
+}
+.sub_fa{
+  /* position: absolute; */
+  width: 84%;
+  height: 60rpx;
+  margin: 0 auto;
+  justify-content: right;
+  margin-bottom: 20rpx;
+  line-height: 60rpx;
+  
+}
+.sub_fa view{
+  width: 200rpx;
+  height: 60rpx;
+  background: rgb(66, 21, 0);
+  text-align: center;
+  line-height: 60rpx;
+  justify-content: right;
+  border-radius: 40rpx;
+  color:white;
+  float: right;
+  margin-top:10rpx;
+}
+.bcg_fix_liu{
+  background: gray;
+  opacity: .7;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 9
+}
+.name_noertops {
+  padding: 20rpx;
+  font-size: 26rpx;
+  color: #9F9E9D;
+  text-align: center;
+
+}

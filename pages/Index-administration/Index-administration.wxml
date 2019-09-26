@@ -1,0 +1,26 @@
+<view class="topConduct">
+  <view class="{{selected?'white':'default'}}" data-id="{{name1.id}}" bindtap="selected">{{name1.name}}</view>
+  <view class="{{selected1?'white':'default'}}" data-id="{{name2.id}}" bindtap="selected1">{{name2.name}}</view>
+  <view class="{{selected0?'white':'default'}}" data-id="{{name3.id}}" bindtap="selected0">{{name3.name}}</view>
+  <view class="{{selected2?'white':'default'}}" data-id="{{name4.id}}" bindtap="selected2">{{name4.name}}</view>
+  <view class="{{selected3?'white':'default'}}" data-id="{{name5.id}}" bindtap="selected3">{{name5.name}}</view>
+  <view class="{{selected4?'white':'default'}}" data-id="{{name6.id}}" bindtap="selected4">{{name6.name}}</view>
+  <view class="{{selected5?'white':'default'}}" data-id="{{name7.id}}" bindtap="selected5">{{name7.name}}</view>
+  <view class="{{selected6?'white':'default'}}" data-id="{{name8.id}}" bindtap="selected6">{{name8.name}}</view>
+</view>
+<view class="bgc">
+ <view class="notr_hugu" wx:for="{{detilds}}" bindtap='noterFnnei_me' data-id="{{item.id}}" data-user="{{item.user_id}}">
+ <view class="bian_ji">
+  <image src="../../images/bj01.png"></image>
+ </view>
+      <view class="notr_leftimg">
+        <view class="time_pt">{{item.start_time}}-{{item.end_time}}</view>
+        <image src="{{item.img_url}}"></image>
+      </view>
+      <view class="notr_righttxt">
+          <view class="notr_titx">{{item.name}}</view>
+          <view class="notr_tits">{{item.activity_content}}</view>
+      </view>
+    </view>
+</view>
+<view style="height:100rpx;"></view>

@@ -1,0 +1,91 @@
+/* pages/Index-meChanxui/Index-meChanxui.wxss */
+page{
+  background:rgb(245, 237, 234);
+
+}
+.bgc_p{
+  padding: 40rpx;
+}
+.pick_mechan{
+  width: 100%;
+  display: flex;
+}
+.right_bgctime{
+  /* padding-left:40rpx;
+  padding-right:40rpx;
+  padding-top:40rpx; */
+
+}
+.right_title{
+  font-size: 30rpx;
+  font-weight: 700;
+}
+.main-item-input{
+  width: 200rpx;
+  height: 40rpx;
+  padding: 10rpx;
+  line-height: 40rpx;
+  margin: 0 auto;
+  text-align: left;
+  background: rgb(239, 225, 222);
+  border-radius: 30rpx;
+  display: flex;
+  margin-top:20rpx;
+  margin-bottom: 20rpx;
+  position:relative;
+}
+.picker-area-text{
+  margin-left:20rpx;
+  font-size: 26rpx;
+   width: 150rpx;
+   color: gray;
+}
+.main-item-input image{
+  width: 18rpx;
+  height: 12rpx;
+  position:absolute;
+  top:24rpx;
+  right:30rpx;
+
+}
+.mechan_cont{
+  width: 90%;
+  /* padding: 30rpx; */
+  padding-top:50rpx;
+  padding-bottom:50rpx;
+  padding-left:30rpx;
+  padding-right:30rpx;
+  background: rgb(239, 225, 222);
+  /* display: flex; */
+  border-radius: 10rpx;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.top_cont{
+  display: flex;
+  font-size: 28rpx;
+  position: relative;
+
+}
+.top_contime{
+  color: black;
+}
+.top_contimenum{
+  color:gray;
+  position: absolute;
+  /* top:10rpx; */
+  right: 20rpx;
+}
+.left_num_time{
+ margin-top:26rpx;
+ color: gray;
+ font-size: 26rpx;
+}
+.ranking{
+  position: absolute;
+  top:96rpx;
+  right:50rpx;
+  font-size: 54rpx;
+  font-weight: 700;
+  color: #421500;
+}

@@ -1,0 +1,224 @@
+<view class="top_txt" wx:if="{{baizuFanb}}">
+您当前百座第{{lun}}轮{{yin}}印{{zuo}}座
+</view>
+<view class="top_txt" wx:if="{{qianzuFanb}}">
+您当前千座第{{optian}}天{{optians}}座
+</view>
+<view class="posti_fix_bg">
+  <!-- <view class="Duan_time_top_fix"></view>
+<view class="Duan_time_bot_fix"></view> -->
+  <view class="Duan_time">
+    <view class="nav_times">
+      <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange">
+        <picker-view-column>
+          <view wx:for="{{indexidxshis}}" wx:key="{{index}}" wx:if="{{indextimeFn}}" style="line-height: 50px">{{item.idxs}}时</view>
+          <view wx:for="{{indexidxshi}}" wx:key="{{index}}" wx:if="{{indextimeFns}}" style="line-height: 50px">{{item.idxs}}时</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+    <view class="nav_timess">
+      <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChanges">
+        <picker-view-column>
+          <view wx:for="{{indexidxfen}}" style="line-height: 50px">{{item.idxsf}}分</view>
+        </picker-view-column>
+      </picker-view>
+    </view>
+  </view>
+</view>
+<view class="fix_h_bgcimg">
+  <view class="title_fix" wx:if="{{shengYu}}">剩余禅修时长</view>
+  <view class="time_fenge" wx:if="{{shengYu}}">
+    <view class='cont'>
+      <!-- <text class='one'>{{a}}</text> -->
+      <view class='two'>
+        <label class='times'>{{clock}}</label>小时
+        <label class='times'>{{b}}</label>分钟
+        <label class='times'>{{c}}</label>秒</view>
+      <!-- <lable class='msg' bindtap="btn_sub" >完善资料</lable> -->
+    </view>
+  </view>
+  <view class="sop_tchan" bindtap="stopchanFn" wx:if="{{startKaifn}}">
+    <form bindsubmit="form_submit" report-submit='true'>
+      <button form-type="submit" class='formid'> </button>
+    </form>开始禅修</view>
+  <view class="sop_tchan" bindtap="stopchanFns" wx:if="{{stopKaifn}}">取消禅修</view>
+
+</view>
+<view class="fix_one_img">
+  <image src="../../images/bj.png"></image>
+</view>
+
+
+<view class="flx_bg" wx:if="{{isCenter}}"></view>
+<view class="setclock_cont" wx:if="{{isCenter}}">
+  <view class="top_setlock">
+    <view class="top_setlock_img">
+      <image src="../../images/tk.png"></image>
+    </view>
+    <view class="guanbi_chan" bindtap="guanBiFn">
+      <image src="../../images/cha1.png"></image>
+    </view>
+    <!-- 设置时间 -->
+    <view class="stat_times_fix">结束</view>
+  </view>
+  <view class="cont_fixe_cont">
+    <view class="time_cont_x">
+      <view style="font-size:30rpx;color:#421500; margin-right:10rpx;margin-bottom:10rpx;">姓名:{{user_name_op}}</view>
+      <!-- <text > -->
+      <view style="font-size:28rpx;color:gray;margin-bottom:10rpx;">日期:{{tiemss_time}}</view>
+      <view style="font-size:28rpx;color:gray;margin-bottom:10rpx;">完成{{leimin}}{{hour.idxs}}:{{minute.idxsf}}小时,累计完成{{meditation_mains}}</view>
+      <view style="font-size:28rpx;color:gray;margin-bottom:10rpx;">今日排名：{{rank}}</view>
+
+    </view>
+  </view>
+
+  <view class="o_fix_bot">
+    <view class="quxiao_o_bot" bindtap="guanBiFn">确定</view>
+    <!-- <view class="quxiao_o_bot" bindtap="guanBiFn">取消</view> -->
+    <view class="que_o_bot" bindtap="fenXiangFn">
+      <button plain="禅修分享" class="sharBtnClass" open-type='share' hover-class="other-button-hover"></button> 分享 </view>
+  </view>
+
+</view>
+
+<!-- <view class="fix_bot_fenx" wx:if="{{ifThree}}">
+    <view class="title_fixbot">分享到</view>
+    <view class="ico_fenx_nn">
+      <view class="ico_weix">
+      <button plain="禅修分享" class="sharBtnClass"  open-type='share' hover-class="other-button-hover"></button>
+        <view class="weix-img"><image src="../../images/wx.png"></image></view>
+        <view class="weix_title">微信</view>
+      
+      </view>
+
+    </view>
+    <view class="fix_bot_fenx_quxiao" bindtap="quXiaoFn">取消</view>
+</view> -->
+<!-- <view class="bot_bot_fixed" wx:if="{{ifThree}}"></view> -->
+<!-- <view class="bot_bot_fixed" wx:if="{{ifFour}}"></view>
+<view class="fix_complete" wx:if="{{ifFour}}">
+  <view class="fix_complete_img"><image src="../../images/xm2.png"></image></view>
+  <view class="fix_complete_img_fixd" bindtap="guanBiFnwanchen"><image src="../../images/cha1.png"></image></view>
+  <view class="txt-commm">恭喜完成心密百座</view>
+  <view class="txt-commm">百座后世永不坠三恶道</view>
+</view> -->
+<!-- <view class="bot_bot_fixed" wx:if="{{ifFours}}"></view>
+<view class="fix_complete" wx:if="{{ifFours}}">
+  <view class="fix_complete_img"><image src="../../images/xm2.png"></image></view>
+  <view class="fix_complete_img_fixd" bindtap="guanBiFnwanchens"><image src="../../images/cha1.png"></image></view>
+  <view class="txt-commm">恭喜完成心密千座</view>
+  <view class="txt-commm">千座后世永不坠三恶道</view>
+</view> -->
+
+<view class="flx_bg" wx:if="{{isThree}}"></view>
+<view class="setclock_contt" wx:if="{{isThree}}">
+  <view class="top_setlockt">
+    <view class="top_setlock_imgt">
+      <image src="../../images/tk.png"></image>
+    </view>
+    <view class="guanbi_chant" bindtap="guanBiFn">
+      <image src="../../images/cha1.png"></image>
+    </view>
+    <!-- 设置时间 -->
+    <view class="stat_times_fixt">结束</view>
+  </view>
+  <view class="cont_fixe_contt">
+    <view class="time_cont_x">
+      <!-- <text style="font-size:30rpx;color:#421500; margin-right:10rpx;">王金柱</text>
+      <text style="font-size:28rpx;color:gray;">2019-07-15 完成念佛1小时，累计完成15天18小时，今日排名：2，累计完成15天18小时</text> -->
+      <view class="top_titname">
+        <view style="font-size:30rpx;color:#421500; margin-right:10rpx;">{{user_name_op}}</view>
+        <view style="font-size:28rpx;color:gray;">{{tiemss_time}}</view>
+      </view>
+      <view class="top_tow ">
+        百座{{lun}}轮{{yin}}印{{zuo}}座，愿此生速开智慧
+      </view>
+      <view class="top_tow">
+        成佛救度众生不求余果
+      </view>
+      <view class="top_tow">
+        百座后世永不坠三恶道
+      </view>
+      <view class="top_towt">
+        百座结束：{{lun}}轮{{yin}}印{{zuo}}座
+      </view>
+    </view>
+  </view>
+
+  <view class="o_fix_bot">
+    <view class="quxiao_o_bot" bindtap="guanBiFn">确定</view>
+    <view class="que_o_bot" bindtap="fenXiangFn">
+      <button plain="禅修分享" class="sharBtnClass" open-type='share' hover-class="other-button-hover"></button>分享</view>
+
+  </view>
+  <view class="o_fix_bot" wx:if="{{hundred_num>96}}">
+    <view class="quxiao_o_bot" bindtap="guanBiFn">加座</view>
+    <view class="que_o_bots" bindtap="">开始千座</view>
+
+  </view>
+
+</view>
+<view class="flx_bg" wx:if="{{isThrees}}"></view>
+<view class="setclock_contt" wx:if="{{isThrees}}">
+  <view class="top_setlockt">
+    <view class="top_setlock_imgt">
+      <image src="../../images/tk.png"></image>
+    </view>
+    <view class="guanbi_chant" bindtap="guanBiFnss">
+      <image src="../../images/cha1.png"></image>
+    </view>
+    <!-- 设置时间 -->
+    <view class="stat_times_fixt">结束</view>
+  </view>
+  <view class="cont_fixe_contt">
+    <view class="time_cont_x">
+      <!-- <text style="font-size:30rpx;color:#421500; margin-right:10rpx;">王金柱</text>
+      <text style="font-size:28rpx;color:gray;">2019-07-15 完成念佛1小时，累计完成15天18小时，今日排名：2，累计完成15天18小时</text> -->
+      <view class="top_titname">
+        <view style="font-size:30rpx;color:#421500; margin-right:10rpx;">{{user_name_op}}</view>
+        <view style="font-size:28rpx;color:gray;">{{tiemss_time}}</view>
+      </view>
+      <view class="top_tow ">
+        <!-- 千座{{lun}}天{zuo}}座，愿此生速开智慧 -->
+        恭喜完成千座，愿此生速开智慧
+      </view>
+      <view class="top_tow">
+        成佛救度众生不求余果
+      </view>
+      <view class="top_tow">
+        千座后世永不坠三恶道
+      </view>
+      <view class="top_towt">
+        <!-- 千座结束：千座{{lun}}天{zuo}}座 -->
+        千座结束：今日排名{{rank}}
+      </view>
+    </view>
+  </view>
+
+  <view class="o_fix_bot">
+    <view class="quxiao_o_bot" bindtap="guanBiFnss">确定</view>
+    <view class="que_o_bot" bindtap="fenXiangFn">
+      <button plain="禅修分享" class="sharBtnClass" open-type='share' hover-class="other-button-hover"></button>分享</view>
+
+  </view>
+  <!-- <view class="o_fix_bot" wx:if="{{hundred_num>96}}">
+      <view class="quxiao_o_bot" bindtap="">加座</view>
+      <view class="que_o_bot" bindtap="">开始千座</view>
+  </view> -->
+</view>
+<view class="fixopsbcgzz" wx:if="{{showlde}}"></view>
+<view class="xfridops" wx:if="{{showlde}}">
+  <radio-group bindchange="ycf">
+   <radio value="1" style="margin-right:84rpx" checked="{{numss}}">引磬出定</radio>
+   <radio value="2"  checked="{{nums}}" >震动出定</radio>
+  
+   
+   
+  
+  </radio-group>
+  <view class="bot_selostions">
+    <view bindtap="seleopsquFn">取消</view>
+    <view bindtap="seleopstionFn">确定</view>
+  </view>
+</view>
+<view class="returnFanhui" bindtap="returnFn">返回首页</view>
